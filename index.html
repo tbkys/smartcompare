@@ -41,25 +41,12 @@
 
 <br><br><br><br>
 
-
-
-<div id="selection" >
-    <select  ng-model="first_selected_Item" ng-options="x.Name for x in devices" ng-change="setChoice(0)">
-        <option value="" disabled selected > Select a device </option>
-    </select>
-    <select  ng-model="second_selected_Item" ng-options="x.Name for x in devices"  ng-change="setChoice(1)">
-        <option value="" disabled selected > Select a device </option>
-    </select>
-    <button  type="button" onclick="ChangeVisibility('compare','home','home')">Compare</button>
-</div>
-
-
 <div class="container" id="home">
     <br>
     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
 
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators" >
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
@@ -77,7 +64,34 @@
     </div>
 </div>
 
+
+
+<div id="selection" >
+
+    <div id="priority" class="btn-group">
+        <h1>What are the most important features for you?</h1>
+        <br>
+        <span ng-repeat="p in Priorities">
+            <label class="btn btn-primary"  >
+                <input type="checkbox" ng-model="p[1]">
+                {{p[0]}}</label>
+            </span>
+    </div>
+    <div id="drop_downs">
+    <select  ng-model="first_selected_Item" ng-options="x.Name for x in devices" ng-change="setChoice(0)">
+        <option value="" disabled selected > Select a device </option>
+    </select>
+    <select  ng-model="second_selected_Item" ng-options="x.Name for x in devices"  ng-change="setChoice(1)">
+        <option value="" disabled selected > Select a device </option>
+    </select>
+    <button  type="button" onclick="ChangeVisibility('compare','home','home')">Compare</button>
+    </div>
+</div>
+
+
+
 <div id="compare">
+
     <table  class="table table-bordered table-responsive">
         <tbody>
         <tr>
@@ -161,13 +175,20 @@
     </table>
 </div>
 
-
+<footer>
+    <br>
+    <a href="https://docs.google.com/document/d/1PO-q6RXqJqhp8SrDRcN2pC_KLAmEdDroAascT88VGgY/edit?usp=sharing">Developer's use only</a>
+</footer>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/angular.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
+<!--
+<script src="js/ui-bootstrap-tpls-0.11.2.js"></script>
+-->
+
 
 <script src="js/bootstrap-table.min.js"></script>
 <script src="js/bootstrap-table-zh-CN.min.js"></script>
@@ -175,8 +196,5 @@
 <script src="js/jquery.csv-0.71.js"></script>
 <script src="js/Comparator.js"></script>
 </body>
-<footer>
-    <br>
-    <a href="https://docs.google.com/document/d/1PO-q6RXqJqhp8SrDRcN2pC_KLAmEdDroAascT88VGgY/edit?usp=sharing">Developer's use only</a>
-</footer>
+
 </html>

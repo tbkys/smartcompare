@@ -448,18 +448,16 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
     ];
 
-    $scope.slides = [
-        {
-            name : 'intro1',
-            image : 'images/sc1.jpg',
-            active: true
-        },
-        {
-            name : 'intro2',
-            image : 'images/sc2.jpg',
-            active: false
-        }
-    ]
+    $scope.Priorities = {
+        Date: ["Release Date",false],
+        Weight: ["Light Weight",false],
+        OS: ["OS",false],
+        Screen: ["Big Screen",false],
+        FrontCamera: ["Front Camera",false],
+        Camera: ["Camera",false],
+        RAM: ["RAM Memory",false],
+        Battery:["Battery",false],
+    };
 
     $scope.select_default = "Choose a device";
 
@@ -529,97 +527,128 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
     }
 
-
-
-
     $scope.Scoring = function (p1) {
         var result=0;
+        var priority_bonus =4;
         var i=0;
         if (p1.Technology.substring(0,2)==='LTE' ) {
             p1.score[i] += 2;
             result+=2;
         }
         i++; // Date
-         if (p1.Year == 2015 ) {
+        if (p1.Year == 2015 && p1.Month>=4) {
+            p1.score[i] += 3;
+        }
+         else if (p1.Year == 2015 ) {
             p1.score[i] += 2;
-            result+=2;
         }
         else if (p1.Year == 2014 ) {
             p1.score[i] += 1;
-            result+=1;
         }
-
-        i++;
+        if($scope.Priorities.Date[1]){
+            p1.score[i]*= priority_bonus;
+        }
+        result += p1.score[i];
+        i++ // Weight
 
         if (p1.Weight <= 140) { // the lighter the weight - the better
+            p1.score[i] += 3;
+        }
+       else if (p1.Weight <= 160) { // the lighter the weight - the better
             p1.score[i] += 2;
-            result+=2;
         }
-        i++;
-        if (p1.Resolution === 1440 ) {
-            if(p1.Screen<=5){
-                p1.score[i] +=3;
-            }
-            else{
-                p1.score[i]+= 2;
-            }
-        }
-        else if (p1.resolution===1080) {
-            if(p1.Screen<=4.8)
-                 p1.score[i] += 2;
-            else
-                p1.score[i] += 1;
-        }
-        else if (p1.resolution >= 720) {
+       else if (p1.Weight <= 170) { // the lighter the weight - the better
             p1.score[i] += 1;
         }
-        i++;
+        if($scope.Priorities.Weight[1]){
+            p1.score[i]*= priority_bonus;
 
+        }
+        result += p1.score[i];
+        i++; // Screen + Resolution
+
+        if($scope.Priorities.Screen[1]){ // Big Screen marked
+            if(p1.Screen>=5){
+                p1.score[i]+=1;
+            }
+            else if(p1.Scree>=5.5){
+                p1.score[i]+=2;
+            }
+            else if(p1.Scree>=5.7){
+                p1.score[i]+=3;
+            }
+            p1.score[i]*= priority_bonus;
+        }
+        else {
+            if (p1.Resolution === 1440) {
+                if (p1.Screen <= 5) {
+                    p1.score[i] += 3;
+                }
+                else {
+                    p1.score[i] += 2;
+                }
+            }
+            else if (p1.resolution === 1080) {
+                if (p1.Screen <= 4.8) {
+                    p1.score[i] += 2;
+                }
+                else {
+                    p1.score[i] += 1;
+                }
+            }
+            else if (p1.resolution >= 720) {
+                p1.score[i] += 1;
+            }
+        }
+        result += p1.score[i];
+        i++; // Camera
         if (p1.Camera>=20){
             p1.score[i]+=4;
         }
-
         else if (p1.Camera >= 16) {
             p1.score[i] += 3;
-            result+=3;
         }
 
         else if (p1.Camera>=12) {
             p1.score[i] +=2;
-            result+=2;
         }
         else if (p1.Camera>=8){
             p1.score[i]+=1;
-            result+=1;
         }
-        i++;
+        if($scope.Priorities.Camera[1]){
+            p1.score[i]*= priority_bonus;
+
+        }
+        result += p1.score[i];
+        i++; // RAM
 
         if (p1.RAM === 4 ) {
             p1.score[i] +=5;
-            result+=5;
         }
         else if (p1.RAM ===  3){
             p1.score[i] +=3;
-            result+=3;
         }
         else if (p1.RAM ===  2){
             p1.score[i] +=1;
-            result+=1;
         }
-
-        i++;
+        if($scope.Priorities.RAM[1]){
+            p1.score[i]*= priority_bonus;
+        }
+        result += p1.score[i];
+        i++; // Battery
         if ((p1.Battery >= 2700 && p1.Screen<=5.5) || (p1.Battery>=2500 && p1.Screen<=5)) {
             p1.score[i] += 3;
-            result+=3;
         }
         else if (p1.Battery > 3000){
             p1.score[i] +=2;
-            result+=2;
         }
         else if (p1.Battery > 2500){
             p1.score[i] +=1 ;
-            result+=1;
         }
+        if($scope.Priorities.Battery[1]){
+            p1.score[i]*= priority_bonus;
+        }
+        result += p1.score[i];
         i++;
         if(p1.FrontCamera>5){
             p1.score[i]+=2;
@@ -627,7 +656,11 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else if(p1.FrontCamera>3){
             p1.score[i]+=1;
         }
+        if($scope.Priorities.FrontCamera[1]){
+            p1.score[i]*= priority_bonus;
 
+        }
+        result += p1.score[i];
         p1.final_score=result;
     }
 

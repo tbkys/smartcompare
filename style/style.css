@@ -95,3 +95,12 @@ option{
     height: 90px;
     width: 60px;
 }
+
+#priority{
+    margin-top:30px;
+}
+
+#drop_downs {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
