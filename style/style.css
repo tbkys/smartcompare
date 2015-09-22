@@ -104,6 +104,6 @@ option{
     margin-bottom: 30px;
 }
 
-#video, #buttonbar {
+.video {
     margin-left: 200px;
 }

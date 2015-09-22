@@ -734,6 +734,7 @@ $scope.isTie = function() {
 
 });
 
+$('.video').click(function(){this.paused?this.play():this.pause();});
 
 ChangeVisibility=function show(shown, hidden1,hidden2) {
     document.getElementById(shown).style.display='block';
