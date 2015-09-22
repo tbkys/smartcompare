@@ -456,7 +456,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         FrontCamera: ["Front Camera",false],
         Camera: ["Camera",false],
         RAM: ["RAM Memory",false],
-        Battery:["Battery",false],
+        Battery:["Battery",false]
     };
 
     $scope.select_default = "Choose a device";
@@ -525,7 +525,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else if (p2.FrontCamera > p1.FrontCamera) {
             p2.category_winner[i] = true;
         }
-    }
+    };
 
     $scope.Scoring = function (p1) {
         var result=0;
@@ -662,7 +662,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
         result += p1.score[i];
         p1.final_score=result;
-    }
+    };
 
     /*
      set red for looser and green for winner
@@ -688,7 +688,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
                 return {color:"red"};
             }
         }
-    }
+    };
 
 /*
  mark the chosen deices for comparison
@@ -708,7 +708,7 @@ $scope.initialize=function(p1){
         p1.category_winner[i] = false;
     }
     p1.winner=false;
-}
+};
 
 /*
  compare selected devices
@@ -733,6 +733,7 @@ $scope.isTie = function() {
 }
 
 });
+
 
 ChangeVisibility=function show(shown, hidden1,hidden2) {
     document.getElementById(shown).style.display='block';
