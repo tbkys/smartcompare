@@ -84,19 +84,23 @@
             </span>
     </div>
     <div id="drop_downs">
-    <select  ng-model="first_selected_Item" ng-options="x.Name for x in devices" ng-change="setChoice(0)">
-        <option value="" disabled selected > Select a device </option>
-    </select>
-    <select  ng-model="second_selected_Item" ng-options="x.Name for x in devices"  ng-change="setChoice(1)">
-        <option value="" disabled selected > Select a device </option>
-    </select>
-    <button  type="button" onclick="ChangeVisibility('compare','home','home')">Compare</button>
+        <select class="select1" ng-model="first_selected_Item" ng-options="x.Name for x in devices" ng-change="setChoice(0)">
+            <option   value="" disabled selected > Select a device </option>
+        </select>
+
+        <select ng-disabled="!first_selected_Item" class="select2"  ng-model="second_selected_Item" ng-options="x.Name for x in devices "
+                ng-change="setChoice(1)">
+            <option value="" selected > Select a device </option>
+        </select>
+
+        <button ng-hide="!second_selected_Item"  id='cmp_btn' type="button"
+                onclick="ChangeVisibility('compare','home','home')">Compare</button>
     </div>
 </div>
 
 
 
-<div id="compare">
+<div id="compare" ng-hide="SameDevice">
 
     <table  class="table table-bordered table-responsive">
         <tbody>

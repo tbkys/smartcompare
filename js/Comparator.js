@@ -571,10 +571,10 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             if(p1.Screen>=5){
                 p1.score[i]+=1;
             }
-            else if(p1.Scree>=5.5){
+            else if(p1.Screen>=5.5){
                 p1.score[i]+=2;
             }
-            else if(p1.Scree>=5.7){
+            else if(p1.Screen>=5.7){
                 p1.score[i]+=3;
             }
             p1.score[i]*= priority_bonus;
@@ -732,9 +732,12 @@ $scope.isTie = function() {
     return !($scope.first_selected_Item.winner || $scope.second_selected_Item.winner);
 }
 
+$scope.SameDevice = function() {
+    return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
+}
 });
 
-$('.video').click(function(){this.paused?this.play():this.pause();});
+
 
 ChangeVisibility=function show(shown, hidden1,hidden2) {
     document.getElementById(shown).style.display='block';
