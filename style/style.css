@@ -30,7 +30,6 @@
     color: #398439;
     font-size: 30px;
     font-weight:bold;
-    font-family: Vijaya;
 }
 
 .table {
@@ -53,6 +52,8 @@
 #compare,#selection {
     display: none;
 }
+
+
 #myCarousel{
     margin-left: 170px;
 }
@@ -103,4 +104,8 @@ option{
 #drop_downs {
     margin-top:30px;
     margin-bottom: 30px;
+}
+
+.video {
+    margin-left: 200px;
 }

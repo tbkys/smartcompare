@@ -1,1 +1,1 @@
-# SmartCompare
+# smartcompare
