@@ -169,6 +169,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 16,
             RAM: 3,
             Battery: 2600,
+            price: 620,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -211,6 +212,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 3,
             Battery: 3220,
+            price: 350,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -232,6 +234,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 3,
             Battery: 3100,
+            price: 300,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -253,6 +256,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 4,
             Battery: 3300,
+            price: 400,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -274,6 +278,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 20,
             RAM: 3,
             Battery: 3100,
+            price: 460,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -295,6 +300,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 23,
             RAM: 3,
             Battery: 2900,
+            price: null,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -316,6 +322,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 4,
             Battery: 3000,
+            price: 200,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -337,6 +344,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 20,
             RAM: 3,
             Battery: 2840,
+            price: 470,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -358,6 +366,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 21,
             RAM: 3,
             Battery: 3000,
+            price: 400,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -379,6 +388,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 3,
             Battery: 2600,
+            price: 580,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -400,6 +410,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 2,
             Battery: 3000,
+            price: 210,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -421,6 +432,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 13,
             RAM: 3,
             Battery: 3000,
+            price: 300,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -442,6 +454,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 16,
             RAM: 3,
             Battery: 3000,
+            price: 440,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
