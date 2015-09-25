@@ -491,14 +491,14 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else  if (p2.Technology.substring(0,2)==='LTE' && p1.Technology.substring(0,2)!=='LTE' ) {
             p2.category_winner[i] =true;
         }
-        i++;
+        i++; // move to [1] release date
         if (p1.Year > p2.Year || (p1.Year === p2.Year && p1.Month > p2.Month)) {
             p1.category_winner[i] = true;
         }
         else if (p2.Year > p1.Year || (p2.Year === p1.Year && p2.Month > p1.Month)) {
             p2.category_winner[i] = true;
         }
-        i++;
+        i++; // move to [2] weight
 
         if (p1.Weight < p2.Weight) { // the lighter the weight - the better
             p1.category_winner[i] = true;
@@ -507,7 +507,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             p2.category_winner[i] = true;
         }
 
-        i++;
+        i++; // move to [3] Screen Size
 
         if (p1.Screen > p2.Screen || (p1.Screen === p2.Screen && p1.Resolution > p2.Resolution)) {
             p1.category_winner[i] = true;
@@ -516,7 +516,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             p2.category_winner[i] = true;
         }
 
-        i++;
+        i++; // move to [4] Camera
 
         if (p1.Camera > p2.Camera) {
             p1.category_winner[i] = true;
@@ -524,7 +524,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else if (p2.Camera > p1.Camera) {
             p2.category_winner[i] = true;
         }
-        i++;
+        i++; // move to [5] RAM Memory
 
         if (p1.RAM > p2.RAM) {
             p1.category_winner[i] = true;
@@ -532,7 +532,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else if (p2.RAM > p1.RAM) {
             p2.category_winner[i] = true;
         }
-        i++;
+        i++; // move to [6] Battery
 
         if (p1.Battery > p2.Battery) {
             p1.category_winner[i] = true;
@@ -540,11 +540,18 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         else if (p2.Battery > p1.Battery) {
             p2.category_winner[i] = true;
         }
-        i++;
+        i++; // move to [7] Front Camera
         if (p1.FrontCamera > p2.FrontCamera) {
             p1.category_winner[i] = true;
         }
         else if (p2.FrontCamera > p1.FrontCamera) {
+            p2.category_winner[i] = true;
+        }
+        i++; // move to [8] price
+        if (p1.price > p2.price) {
+            p1.category_winner[i] = true;
+        }
+        else if (p2.price > p1.price) {
             p2.category_winner[i] = true;
         }
     };
