@@ -758,14 +758,24 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
     $scope.FilterDevices=function() {
         for (var i=0 ; i<$scope.devices.length ; i++) {
             for (var j=0 ; j<$scope.manufactures.length ; j++){
-                if ($scope.devices[i].manufacture == $scope.manufactures[i].Name) {
-                   if( $scope.DevicesToShow.indexOf($scope.devices[i])==-1){
+                if ($scope.devices[i].manufacture == $scope.manufactures[j].Name && $scope.manufactures[j].selected) {
+                   if(!$scope.isInDevicesToShow($scope.devices[i])){
                        $scope.DevicesToShow.push($scope.devices[i]);
                        break;
                    }
                 }
             }
         }
+    }
+
+    $scope.isInDevicesToShow = function(device){
+        for(var i=0;i< $scope.DevicesToShow.length;i++)
+        {
+            if ($scope.DevicesToShow[i].Name === device.Name) {
+                return true;
+            }
+        }
+        return false;
     }
 
 /*
