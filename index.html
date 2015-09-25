@@ -84,13 +84,15 @@
             </span>
     </div>
     <div id="drop_downs">
-        <select class="select1" ng-model="first_selected_Item" ng-options="x.Name for x in devices" ng-change="setChoice(0)">
+        <select class="select1" ng-model="first_selected_Item" ng-change="setChoice(0)" ng-options="x.Name for x in devices">
             <option   value="" disabled selected > Select a device </option>
+            <option > </option>
+
         </select>
 
-        <select ng-disabled="!first_selected_Item" class="select2"  ng-model="second_selected_Item" ng-options="x.Name for x in devices "
-                ng-change="setChoice(1)">
+        <select ng-disabled="!first_selected_Item" class="select2" ng-options="x.Name for x in devices"  ng-model="second_selected_Item" ng-change="setChoice(1)">
             <option value="" selected > Select a device </option>
+
         </select>
 
         <button ng-hide="!second_selected_Item"  id='cmp_btn' type="button"
@@ -100,7 +102,7 @@
 
 
 
-<div id="compare" >
+<div id="compare" ng-hide="SameDevice()">
 
     <table  class="table table-bordered table-responsive">
         <tbody>

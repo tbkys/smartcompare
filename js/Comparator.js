@@ -22,9 +22,11 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 8,
             RAM: 1,
             Battery: 1560,
+            price: 520,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
+
         },
         {
             chosen : [false,false],
@@ -43,9 +45,11 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 8,
             RAM: 1,
             Battery: 1810,
+            price : 650,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
+
         },
         {
             chosen : [false,false],
@@ -64,6 +68,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 12,
             RAM: 2,
             Battery: 1715,
+            price : 890,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -85,6 +90,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 12,
             RAM: 2,
             Battery: 2915,
+            price : 1085,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -106,6 +112,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 16,
             RAM: 4,
             Battery: 3000,
+            price : 700,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -127,6 +134,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 16,
             RAM: 2,
             Battery: 2800,
+            price: 400,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -148,6 +156,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 16,
             RAM: 3,
             Battery: 2550,
+            price: 540 ,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false],
             final_score: 0
@@ -735,6 +744,9 @@ $scope.isTie = function() {
 $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
 }
+
+
+
 });
 
 
