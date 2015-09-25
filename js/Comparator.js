@@ -4,6 +4,8 @@ var SpCompareApp = angular.module('SpCompareApp', []);
 
 SpCompareApp.controller('SpCompareController', function ($scope) {
 
+    $scope.manufactures = [ "Apple", "LG","Samsung", "Motorola", "Sony" , "Huawei", "Google", "Asus"];
+    $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
     $scope.devices = [
         {
             chosen : [false,false],
