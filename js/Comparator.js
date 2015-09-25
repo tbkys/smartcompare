@@ -200,6 +200,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 8,
             RAM: 2,
             Battery: 2300,
+            price: 290,
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
