@@ -24,7 +24,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 1560,
             price: 520,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
 
         },
@@ -47,7 +47,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 1810,
             price : 650,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
 
         },
@@ -70,7 +70,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 1715,
             price : 890,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -92,7 +92,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2915,
             price : 1085,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -114,7 +114,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price : 700,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -136,7 +136,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2800,
             price: 400,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -158,7 +158,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2550,
             price: 540 ,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -180,7 +180,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2600,
             price: 620,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -201,7 +201,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 2300,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -223,7 +223,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3220,
             price: 350,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -245,7 +245,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3100,
             price: 300,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -267,7 +267,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3300,
             price: 400,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -289,7 +289,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3100,
             price: 460,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -311,7 +311,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2900,
             price: null,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -333,7 +333,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price: 200,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -355,7 +355,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2840,
             price: 470,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -377,7 +377,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price: 400,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -399,7 +399,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 2600,
             price: 580,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -421,7 +421,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price: 210,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -443,7 +443,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price: 300,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -465,7 +465,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Battery: 3000,
             price: 440,
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
         }
     ];
