@@ -5,14 +5,15 @@ var SpCompareApp = angular.module('SpCompareApp', []);
 SpCompareApp.controller('SpCompareController', function ($scope) {
 
     $scope.manufactures = [
-        {name:"Apple", selected: false},
-        {name:"LG", selected: false},
-        {name:"Samsung", selected: false},
-        {name:"Motorola", selected: false},
-        {name:"Sony", selected: false},
-        {name:"Huawei", selected: false},
-        {name:"Google", selected: false},
-        {name:"Asus", selected: false},
+        {Name:"Apple", selected: false},
+        {Name:"LG", selected: false},
+        {Name:"Samsung", selected: false},
+        {Name:"Motorola", selected: false},
+        {Name:"Sony", selected: false},
+        {Name:"Huawei", selected: false},
+        {Name:"Google", selected: false},
+        {Name:"Asus", selected: false},
+        {Name:"OnePlus" , selected:false}
     ];
     $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
     $scope.devices = [
@@ -777,18 +778,9 @@ $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
 }
 
-var expanded = false;
-$scope.showCheckboxes=function(num) {
-        var checkboxes = num==1 ? document.getElementById("checkboxes1") :document.getElementById("checkboxes2");
-        if (!expanded) {
-            checkboxes.style.display = "block";
-            expanded = true;
-        } else {
-            checkboxes.style.display = "none";
-            expanded = false;
-        }
+$scope.ChangeSelected=function(x){
+      x[1]=!x[1];
     }
-
 });
 
 

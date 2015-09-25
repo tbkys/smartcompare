@@ -22,9 +22,9 @@ $(document).bind('click', function (e) {
 });
 
 
-$('.mutliSelect input[type="checkbox"]').on('click', function () {
+$('.multiSelect input[type="checkbox"]').on('click', function () {
 
-    var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+    var title = $(this).closest('.multiSelect').find('input[type="checkbox"]').val(),
         title = $(this).val() + ",";
 
     if ($(this).is(':checked')) {

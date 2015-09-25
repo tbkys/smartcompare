@@ -68,7 +68,9 @@
     margin-left: 200px;
 
 }
-
+.hida {
+    font-weight: normal;
+}
 .dropdown dd, .dropdown dt {
     margin:0px;
     padding:0px;
