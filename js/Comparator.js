@@ -13,11 +13,8 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         {Name:"Huawei", selected: false},
         {Name:"Google", selected: false},
         {Name:"Asus", selected: false},
-<<<<<<< HEAD
         {Name:"OnePlus", selected: false},
-=======
-        {Name:"OnePlus" , selected:false}
->>>>>>> origin/gh-pages
+
     ];
     $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
     $scope.devices = [
@@ -508,6 +505,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
     ];
 
+    $scope.DevicesToShow = [];
     $scope.Priorities = {
         Date: ["Release Date",false],
         Weight: ["Light Weight",false],
@@ -757,6 +755,19 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
     };
 
+    $scope.FilterDevices=function() {
+        for (var i=0 ; i<$scope.devices.length ; i++) {
+            for (var j=0 ; j<$scope.manufactures.length ; j++){
+                if ($scope.devices[i].manufacture == $scope.manufactures[i].Name) {
+                   if( $scope.DevicesToShow.indexOf($scope.devices[i])==-1){
+                       $scope.DevicesToShow.push($scope.devices[i]);
+                       break;
+                   }
+                }
+            }
+        }
+    }
+
 /*
  mark the chosen deices for comparison
  */
@@ -803,9 +814,7 @@ $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
 }
 
-$scope.ChangeSelected=function(x){
-      x[1]=!x[1];
-    }
+
 });
 
 

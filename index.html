@@ -71,35 +71,6 @@
 </div>
 
 
-
-<div id="selection" >
-
-    <div id="priority" class="btn-group">
-        <h3>What are the most important features for you?</h3>
-        <br>
-        <span ng-repeat="p in Priorities">
-            <label class="btn btn-primary"  >
-                <input type="checkbox" ng-model="p[1]">
-                {{p[0]}}</label>
-            </span>
-    </div>
-    <div id="drop_downs">
-        <select class="select1" ng-model="first_selected_Item" ng-change="setChoice(0)" ng-options="x.Name for x in devices">
-            <option   value="" disabled selected > Select a device </option>
-            <option > </option>
-
-        </select>
-
-        <select ng-disabled="!first_selected_Item" class="select2" ng-options="x.Name for x in devices"  ng-model="second_selected_Item" ng-change="setChoice(1)">
-            <option value="" selected > Select a device </option>
-
-        </select>
-
-        <button ng-hide="!second_selected_Item"  id='cmp_btn' type="button"
-                onclick="ChangeVisibility('compare','home','home')">Compare</button>
-    </div>
-</div>
-
 <div id="filter">
     <dl class="dropdown">
 
@@ -114,7 +85,7 @@
             <div class="multiSelect">
                 <ul>
                     <li ng-repeat="x in manufactures">
-                        <input type="checkbox" value="{{x.Name}}" ng-change="ChangeSelected(x)" />
+                        <input type="checkbox" value="{{x.Name}}" ng-model="x.selected" />
                         <span>{{x.Name}}</span>
                     </li>
                 </ul>
@@ -122,7 +93,35 @@
         </dd>
 
     </dl>
+    <button type="button"  ng-click="FilterDevices()" >Filter </button>
+</div>
 
+<div id="selection" >
+
+    <div id="priority" class="btn-group">
+        <h3>What are the most important features for you?</h3>
+        <br>
+        <span ng-repeat="p in Priorities">
+            <label class="btn btn-primary"  >
+                <input type="checkbox" ng-model="p[1]">
+                {{p[0]}}</label>
+            </span>
+    </div>
+    <div id="drop_downs">
+        <select class="select1" ng-model="first_selected_Item" ng-change="setChoice(0)" ng-options="x.Name for x in DevicesToShow">
+            <option   value="" disabled selected > Select a device </option>
+            <option > </option>
+
+        </select>
+
+        <select ng-disabled="!first_selected_Item" class="select2" ng-options="x.Name for x in DevicesToShow"  ng-model="second_selected_Item" ng-change="setChoice(1)">
+            <option value="" selected > Select a device </option>
+
+        </select>
+
+        <button ng-hide="!second_selected_Item"  id='cmp_btn' type="button"
+                onclick="ChangeVisibility('compare','home','home')">Compare</button>
+    </div>
 </div>
 
 <div id="compare" ng-hide="SameDevice()">
