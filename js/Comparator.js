@@ -5,14 +5,15 @@ var SpCompareApp = angular.module('SpCompareApp', []);
 SpCompareApp.controller('SpCompareController', function ($scope) {
 
     $scope.manufactures = [
-        {name:"Apple", selected: false},
-        {name:"LG", selected: false},
-        {name:"Samsung", selected: false},
-        {name:"Motorola", selected: false},
-        {name:"Sony", selected: false},
-        {name:"Huawei", selected: false},
-        {name:"Google", selected: false},
-        {name:"Asus", selected: false},
+        {Name:"Apple", selected: false},
+        {Name:"LG", selected: false},
+        {Name:"Samsung", selected: false},
+        {Name:"Motorola", selected: false},
+        {Name:"Sony", selected: false},
+        {Name:"Huawei", selected: false},
+        {Name:"Google", selected: false},
+        {Name:"Asus", selected: false},
+        {Name:"OnePlus", selected: false},
     ];
     $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
     $scope.devices = [
@@ -34,6 +35,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 1,
             Battery: 1560,
             price: 520,
+            manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -57,6 +59,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 1,
             Battery: 1810,
             price : 650,
+            manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -80,6 +83,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 1715,
             price : 890,
+            manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -102,6 +106,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 2915,
             price : 1085,
+            manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -124,6 +129,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 4,
             Battery: 3000,
             price : 700,
+            manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -146,6 +152,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 2800,
             price: 400,
+            manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -168,6 +175,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 2550,
             price: 540 ,
+            manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -190,6 +198,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 2600,
             price: 620,
+            manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -212,6 +221,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 2300,
             price: 290,
+            manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -234,6 +244,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3220,
             price: 350,
+            manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -256,6 +267,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3100,
             price: 300,
+            manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -278,6 +290,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 4,
             Battery: 3300,
             price: 400,
+            manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -300,6 +313,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3100,
             price: 460,
+            manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -321,7 +335,8 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             Camera: 23,
             RAM: 3,
             Battery: 2900,
-            price: null,
+            price: 900,
+            manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -344,6 +359,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 4,
             Battery: 3000,
             price: 200,
+            manufacture:"Asus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -366,6 +382,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 2840,
             price: 470,
+            manufacture:"HTC",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -388,6 +405,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3000,
             price: 400,
+            manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -410,6 +428,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 2600,
             price: 580,
+            manufacture:"Huawei",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -432,6 +451,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 2,
             Battery: 3000,
             price: 210,
+            manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -454,6 +474,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3000,
             price: 300,
+            manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -476,6 +497,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             RAM: 3,
             Battery: 3000,
             price: 440,
+            manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false],
             final_score: 0
