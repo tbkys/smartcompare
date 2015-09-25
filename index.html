@@ -70,7 +70,50 @@
 
 </div>
 
+<div id="filter">
+    <dl class="dropdown" id="manufactures">
+       <dt>
+           <a href="#">
+               <span class="hida">Select</span>
+               <p class="multiSel"></p>
+           </a>
+        </dt>
 
+        <dd>
+            <div class="select">
+                <ul>
+                    <li ng-repeat="x in manufactures">
+                        <input type="checkbox" value="{{x}}"/>{{x}}
+                    </li>
+
+                </ul>
+            </div>
+        </dd>
+
+    </dl>
+
+    <dl class="dropdown" id="price_lmt">
+        <dt>
+            <a href="#">
+                <span class="hida">Select</span>
+                <p class="multiSel"></p>
+            </a>
+        </dt>
+
+        <dd>
+            <div class="select">
+                <ul>
+                    <li ng-repeat="x in manufactures">
+                        <input type="checkbox" value="{{x}}"/>{{x}}
+                    </li>
+
+                </ul>
+            </div>
+        </dd>
+
+    </dl>
+
+</div>
 
 <div id="selection" >
 
@@ -207,7 +250,7 @@
 <script src="js/ui-bootstrap-tpls-0.11.2.js"></script>
 -->
 
-
+<script src="js/multiSel.js"></script>
 <script src="js/bootstrap-table.min.js"></script>
 <script src="js/bootstrap-table-zh-CN.min.js"></script>
 <script src="js/jquery.csv-0.71.min.js"></script>

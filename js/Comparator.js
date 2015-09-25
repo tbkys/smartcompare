@@ -768,7 +768,17 @@ $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
 }
 
-
+var expanded = false;
+$scope.showCheckboxes=function(num) {
+        var checkboxes = num==1 ? document.getElementById("checkboxes1") :document.getElementById("checkboxes2");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
 
 });
 
