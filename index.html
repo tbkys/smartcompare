@@ -70,6 +70,8 @@
 
 </div>
 
+
+
 <div id="selection" >
 
     <div id="priority" class="btn-group">
@@ -98,7 +100,30 @@
     </div>
 </div>
 
+<div id="filter">
+    <dl class="dropdown">
 
+        <dt>
+            <a href="#">
+                <span class="hida">Select Manufacture</span>
+                <p class="multiSel"></p>
+            </a>
+        </dt>
+
+        <dd>
+            <div class="multiSelect">
+                <ul>
+                    <li ng-repeat="x in manufactures">
+                        <input type="checkbox" value="{{x.Name}}" ng-change="ChangeSelected(x)" />
+                        <span>{{x.Name}}</span>
+                    </li>
+                </ul>
+            </div>
+        </dd>
+
+    </dl>
+
+</div>
 
 <div id="compare" ng-hide="SameDevice()">
 
@@ -205,7 +230,7 @@
 <script src="js/ui-bootstrap-tpls-0.11.2.js"></script>
 -->
 
-
+<script src="js/multiSel.js"></script>
 <script src="js/bootstrap-table.min.js"></script>
 <script src="js/bootstrap-table-zh-CN.min.js"></script>
 <script src="js/jquery.csv-0.71.min.js"></script>

@@ -13,7 +13,11 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         {Name:"Huawei", selected: false},
         {Name:"Google", selected: false},
         {Name:"Asus", selected: false},
+<<<<<<< HEAD
         {Name:"OnePlus", selected: false},
+=======
+        {Name:"OnePlus" , selected:false}
+>>>>>>> origin/gh-pages
     ];
     $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
     $scope.devices = [
@@ -799,8 +803,9 @@ $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
 }
 
-
-
+$scope.ChangeSelected=function(x){
+      x[1]=!x[1];
+    }
 });
 
 
