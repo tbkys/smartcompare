@@ -109,3 +109,18 @@ option{
 .video {
     margin-left: 200px;
 }
+.btn{
+    line-height: 1;
+}
+.btn-primary {
+    background-image: none;
+    background: #28a4c9;
+    border:none;
+    margin-left:-8px;
+    padding: 4px;
+}
+.btn-primary:hover {
+    background-image: none;
+background-color:#28a4c9;
+    border-color:#28a4c9;
+}
