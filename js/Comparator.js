@@ -548,10 +548,10 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             p2.category_winner[i] = true;
         }
         i++; // move to [8] price
-        if (p1.price > p2.price) {
+        if (p1.price < p2.price) {
             p1.category_winner[i] = true;
         }
-        else if (p2.price > p1.price) {
+        else if (p2.price < p1.price) {
             p2.category_winner[i] = true;
         }
     };
@@ -701,7 +701,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             return {color:"black"};
         }
         if (p1 === $scope.first_selected_Item) {
-            if ($scope.first_selected_Item.category_winner[index] > $scope.second_selected_Item.category_winner[index]) {
+            if ($scope.first_selected_Item.category_winner[index]) {
                 return {color: "green"};
             }
             else {
@@ -710,7 +710,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
 
         }
         else  if (p1 === $scope.second_selected_Item) {
-            if ($scope.first_selected_Item.category_winner[index] < $scope.second_selected_Item.category_winner[index]){
+            if ($scope.second_selected_Item.category_winner[index]){
                 return {color:"green"};
             }
             else {
