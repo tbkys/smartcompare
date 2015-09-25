@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d45c20e-092f-41b1-a11a-d908e767bcb3" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Comparator.js" afterPath="$PROJECT_DIR$/js/Comparator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SmartCompare-master.iml" afterPath="$PROJECT_DIR$/.idea/SmartCompare-master.iml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Comparator.js" afterPath="$PROJECT_DIR$/js/Comparator.js" />
+>>>>>>> origin/gh-pages
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -31,8 +35,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-11.884615">
               <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+=======
+            <state vertical-scroll-proportion="-42.884617">
+              <caret line="92" column="103" selection-start-line="92" selection-start-column="103" selection-end-line="92" selection-end-column="103" />
+>>>>>>> origin/gh-pages
               <folding />
             </state>
           </provider>
@@ -51,8 +60,13 @@
       <file leaf-file-name="Comparator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Comparator.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.2800659">
               <caret line="536" column="9" selection-start-line="536" selection-start-column="9" selection-end-line="536" selection-end-column="9" />
+=======
+            <state vertical-scroll-proportion="0.44130924">
+              <caret line="158" column="24" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+>>>>>>> origin/gh-pages
               <folding />
             </state>
           </provider>
@@ -178,6 +192,8 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -260,7 +276,35 @@
       <option name="project" value="LOCAL" />
       <updated>1442566542837</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
+=======
+    <task id="LOCAL-00002" summary="play/pause button added">
+      <created>1442920400650</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1442920400650</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed yom kipur video">
+      <created>1443104571413</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1443104571413</updated>
+    </task>
+    <task id="LOCAL-00004" summary="button is hidden unless two devices were checked">
+      <created>1443116538998</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1443116538998</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ng hide canceled">
+      <created>1443119353686</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1443119353686</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> origin/gh-pages
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -269,9 +313,15 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0032715376" sideWeight="0.50714284" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0032715376" sideWeight="0.49285713" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> origin/gh-pages
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -302,7 +352,15 @@
     <MESSAGE value="developer's google doc" />
     <MESSAGE value="ws" />
     <MESSAGE value="init" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="init" />
+=======
+    <MESSAGE value="play/pause button added" />
+    <MESSAGE value="removed yom kipur video" />
+    <MESSAGE value="button is hidden unless two devices were checked" />
+    <MESSAGE value="ng hide canceled" />
+    <option name="LAST_COMMIT_MESSAGE" value="ng hide canceled" />
+>>>>>>> origin/gh-pages
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,6 +369,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="63" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -337,16 +411,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-11.884615">
           <caret line="180" column="9" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
+=======
+        <state vertical-scroll-proportion="-42.884617">
+          <caret line="92" column="103" selection-start-line="92" selection-start-column="103" selection-end-line="92" selection-end-column="103" />
+>>>>>>> origin/gh-pages
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Comparator.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.2800659">
           <caret line="536" column="9" selection-start-line="536" selection-start-column="9" selection-end-line="536" selection-end-column="9" />
+=======
+        <state vertical-scroll-proportion="0.44130924">
+          <caret line="158" column="24" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+>>>>>>> origin/gh-pages
           <folding />
         </state>
       </provider>
