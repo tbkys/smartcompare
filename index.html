@@ -15,7 +15,7 @@
     <link rel="stylesheet" a href="style/bootstrap-select.min.css">
 
 </head>
-<body ng-controller="SpCompareController">
+<body ng-controller="SpCompareController" >
 <header>
     <nav class="navbar navbar-default">
         <div class="container">
@@ -30,9 +30,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="shadow" onclick="return ChangeVisibility('home','compare','selection')">Home</a></li>
+                    <li><a href="#home" class="shadow" onclick="return ChangeVisibility('home','compare','selection','filter')">Home</a></li>
 
-                    <li><a href="#compare" class="shadow" onclick="return ChangeVisibility('selection','home','compare')">Compare Phones</a></li>
+                    <li><a href="#compare" class="shadow" onclick="return ChangeVisibility('filter','home','compare','selection')">Compare Phones</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -71,9 +71,10 @@
 </div>
 
 
-<div id="filter">
+<div id="filter" ng-init="fillPricesArray()" >
+    <h1 id="headline"> Choose Your Preferences </h1>
+    <!-- filter by manufacture -->
     <dl class="dropdown">
-
         <dt>
             <a href="#">
                 <span class="hida">Select Manufacture</span>
@@ -85,15 +86,23 @@
             <div class="multiSelect">
                 <ul>
                     <li ng-repeat="x in manufactures">
-                        <input type="checkbox" value="{{x.Name}}" ng-model="x.selected" />
-                        <span>{{x.Name}}</span>
+                        <label for="{{$id}}">
+                            <input type="checkbox" id="{{$id}}" value="{{x.Name}}" ng-model="x.selected" />
+                            {{x.Name}}
+                        </label>
                     </li>
                 </ul>
             </div>
         </dd>
-
     </dl>
-    <button type="button"  ng-click="FilterDevices()" >Filter </button>
+
+    <div>
+        <select ng-model="priceLmt" ng-options="(x + '$') for x in priceLimit">
+            <option disabled checked value=""> Select Price Limit</option>
+        </select>
+    </div>
+
+    <button type="button"  ng-click="FilterDevices()" onclick=" ChangeVisibility('selection','filter');">Filter </button>
 </div>
 
 <div id="selection" >

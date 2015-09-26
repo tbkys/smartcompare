@@ -2,7 +2,7 @@
 var SpCompareApp = angular.module('SpCompareApp', []);
 
 
-SpCompareApp.controller('SpCompareController', function ($scope) {
+SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
     $scope.manufactures = [
         {Name:"Apple", selected: false},
@@ -13,10 +13,10 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         {Name:"Huawei", selected: false},
         {Name:"Google", selected: false},
         {Name:"Asus", selected: false},
-        {Name:"OnePlus", selected: false},
-
+        {Name:"OnePlus", selected: false}
     ];
-    $scope.priceLimit = [150, 200 ,250, 300, 350, 400, 450, 500, 550, 600, 650, 700]
+    $scope.priceLimit = [];
+
     $scope.devices = [
         {
             chosen : [false,false],
@@ -755,7 +755,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
         }
     };
 
-    $scope.FilterDevices=function() {
+    $scope.FilterDevicesByManufacture=function() {
         for (var i=0 ; i<$scope.devices.length ; i++) {
             for (var j=0 ; j<$scope.manufactures.length ; j++){
                 if ($scope.devices[i].manufacture == $scope.manufactures[j].Name && $scope.manufactures[j].selected) {
@@ -766,7 +766,7 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
                 }
             }
         }
-    }
+    };
 
     $scope.isInDevicesToShow = function(device){
         for(var i=0;i< $scope.DevicesToShow.length;i++)
@@ -776,7 +776,28 @@ SpCompareApp.controller('SpCompareController', function ($scope) {
             }
         }
         return false;
-    }
+    };
+
+    $scope.FilterDevicesByPrice = function() {
+        for (var i=0 ; i<$scope.devices.length ; i++) {
+            for (var j=0 ; j<$scope.priceLimit.length ; j++){
+                if ($scope.devices[i].price<=$scope.priceLimit[j] && $scope.priceLimit[j] == $scope.priceLmt) {
+                    if(!$scope.isInDevicesToShow($scope.devices[i])){
+                        $scope.DevicesToShow.push($scope.devices[i]);
+                        break;
+                    }
+                }
+            }
+        }
+    };
+
+    $scope.FilterDevices = function() {
+        $scope.FilterDevicesByPrice();
+        $scope.FilterDevicesByManufacture();
+        if ($scope.DevicesToShow.$isEmpty()){
+            $window.alert("There are no devices with the properties you've selected.\n Please select again.");
+        }
+    };
 
 /*
  mark the chosen deices for comparison
@@ -818,21 +839,32 @@ $scope.CompareModels = function(){
 
 $scope.isTie = function() {
     return !($scope.first_selected_Item.winner || $scope.second_selected_Item.winner);
-}
+};
 
 $scope.SameDevice = function() {
     return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
-}
+};
 
+
+/*
+fills the price limit array with the price ranges
+ */
+$scope.fillPricesArray=function(){
+    for (var i=150; i<=700 ; i+=50){
+        var elem =i;
+        $scope.priceLimit.push(elem);
+    }
+}
 
 });
 
 
 
-ChangeVisibility=function show(shown, hidden1,hidden2) {
-    document.getElementById(shown).style.display='block';
-    document.getElementById(hidden1).style.display='none';
-    document.getElementById(hidden2).style.display='none';
+ChangeVisibility=function show() {
+    document.getElementById(arguments[0]).style.display='block';
+    for (var i=1 ; i<arguments.length ; i++) {
+        document.getElementById(arguments[i]).style.display = 'none';
+    }
     return false;
 };
 

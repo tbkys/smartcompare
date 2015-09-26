@@ -90,12 +90,11 @@
     display:block;
     font-style:normal ;
     color:#fff;
-    min-height: 25px;
     line-height: 22px;
     height:22px;
     overflow: hidden;
     border:0;
-    width:174px;
+    width:168px;
 }
 .dropdown dt a span, .multiSel span {
     cursor:pointer;
@@ -109,7 +108,7 @@
     left:0px;
     position:absolute;
     top:2px;
-    width:174px;
+    width:168px;
     list-style:none;
     height: 140px;
     overflow: auto;
@@ -141,10 +140,18 @@ select, .dropdown {
     -moz-appearance:none;
     appearance:none;
     cursor:pointer;
+    width:168px;
+
 }
 
 option{
     text-align: center;
+}
+
+#headline {
+    font-family: sans-serif;
+    margin-left:200px;
+    margin-bottom:100px;
 }
 
 .ImageDisplay {
@@ -168,14 +175,20 @@ option{
     line-height: 1;
 }
 .btn-primary {
-    background-image: none;
+
     background: #28a4c9;
     border:none;
     margin-left:-8px;
     padding: 4px;
 }
 .btn-primary:hover {
-    background-image: none;
-background-color:#28a4c9;
+    background-color:#28a4c9;
     border-color:#28a4c9;
+}
+
+#filter {
+    margin-left: 200px;
+    margin-top : 50px;
+    display: none;
+
 }

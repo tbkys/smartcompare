@@ -12,9 +12,11 @@ $(".dropdown dd ul li a").on('click', function () {
     $(".dropdown dd ul").hide();
 });
 
-function getSelectedValue(id) {
-    return $("#" + id).find("dt a span.value").html();
-}
+
+
+//function getSelectedValue(id) {
+  //  return $("#" + id).find("dt a span.value").html();
+//}
 
 $(document).bind('click', function (e) {
     var $clicked = $(e.target);
