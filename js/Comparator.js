@@ -755,18 +755,6 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         }
     };
 
-    $scope.FilterDevicesByManufacture=function() {
-        for (var i=0 ; i<$scope.devices.length ; i++) {
-            for (var j=0 ; j<$scope.manufactures.length ; j++){
-                if ($scope.devices[i].manufacture == $scope.manufactures[j].Name && $scope.manufactures[j].selected) {
-                   if(!$scope.isInDevicesToShow($scope.devices[i])){
-                       $scope.DevicesToShow.push($scope.devices[i]);
-                       break;
-                   }
-                }
-            }
-        }
-    };
 
     $scope.isInDevicesToShow = function(device){
         for(var i=0;i< $scope.DevicesToShow.length;i++)
@@ -778,26 +766,32 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         return false;
     };
 
-    $scope.FilterDevicesByPrice = function() {
+    $scope.FilterDevices = function() {
+        $scope.DevicesToShow=[];
         for (var i=0 ; i<$scope.devices.length ; i++) {
-            for (var j=0 ; j<$scope.priceLimit.length ; j++){
-                if ($scope.devices[i].price<=$scope.priceLimit[j] && $scope.priceLimit[j] == $scope.priceLmt) {
-                    if(!$scope.isInDevicesToShow($scope.devices[i])){
-                        $scope.DevicesToShow.push($scope.devices[i]);
-                        break;
-                    }
+            for (var j=0 ; j<$scope.manufactures.length ; j++){
+                if ($scope.devices[i].price<=$scope.priceLmt && $scope.devices[i].manufacture == $scope.manufactures[j].Name
+                    && $scope.manufactures[j].selected) {
+                    $scope.DevicesToShow.push($scope.devices[i]);
+                    break;
+
                 }
             }
         }
-    };
-
-    $scope.FilterDevices = function() {
-        $scope.FilterDevicesByPrice();
-        $scope.FilterDevicesByManufacture();
-        if ($scope.DevicesToShow.$isEmpty()){
-            $window.alert("There are no devices with the properties you've selected.\n Please select again.");
+        var filtered_devices_length = $scope.DevicesToShow.length;
+        if (filtered_devices_length==0){
+            $window.alert("There are no corresponding devices to the properties you've selected." +
+                           " Please select again. ");
+        }
+        else if (filtered_devices_length==1){
+            $window.alert("There is only one corresponding device to the properties you've selected." +
+                " Please select again. ");
+        }
+        else {
+            ChangeVisibility('selection','filter');
         }
     };
+
 
 /*
  mark the chosen deices for comparison

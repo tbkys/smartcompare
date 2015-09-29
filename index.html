@@ -70,7 +70,7 @@
 
 </div>
 
-
+<!-- filtering devices by custom preferences section -->
 <div id="filter" ng-init="fillPricesArray()" >
     <h1 id="headline"> Choose Your Preferences </h1>
     <!-- filter by manufacture -->
@@ -102,9 +102,10 @@
         </select>
     </div>
 
-    <button type="button"  ng-click="FilterDevices()" onclick=" ChangeVisibility('selection','filter');">Filter </button>
+    <button id="filter_btn" type="button"  ng-click="FilterDevices()" >Filter </button>
 </div>
 
+<!--  devices select section -->
 <div id="selection" >
 
     <div id="priority" class="btn-group">

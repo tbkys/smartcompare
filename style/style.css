@@ -192,3 +192,7 @@ option{
     display: none;
 
 }
+
+#filter_btn {
+    margin-top: 10px;
+}
