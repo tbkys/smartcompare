@@ -2,7 +2,7 @@
 <html lang="en" ng-app="SpCompareApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 , user-scalable=yes">
 
     <title>Smart Compare - tbk & ys</title>
 
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style/bootstrap-table.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" a href="style/bootstrap-select.min.css">
+    <link rel="stylesheet" href="style/w3.css">
 
 </head>
 <body ng-controller="SpCompareController" >
@@ -73,7 +74,7 @@
 </div>
 
 <!-- filtering devices by custom preferences section -->
-<div id="filter" ng-init="fillPricesArray()" >
+<div id="filter" ng-init="fillPricesArray()" class="w3-container" >
     <h1 id="headline"> Choose Your Preferences </h1>
     <!-- filter by manufacture -->
     <dl class="dropdown">
@@ -108,16 +109,16 @@
 </div>
 
 <!--  devices select section -->
-<div id="selection" >
+<div id="selection" class="w3-container">
 
     <div id="priority" class="btn-group">
         <h3>What are the most important features for you?</h3>
         <br>
         <span ng-repeat="p in Priorities">
-            <label class="btn btn-primary"  >
+            <label class="btn btn-primary "  >
                 <input type="checkbox" ng-model="p[1]">
                 {{p[0]}}</label>
-            </span>
+        </span>
     </div>
     <div id="drop_downs">
         <select class="select1" ng-model="first_selected_Item" ng-change="setChoice(0)" ng-options="x.Name for x in DevicesToShow">
@@ -138,8 +139,8 @@
 
 <div id="compare" ng-hide="SameDevice()">
 
-    <table  class="table table-bordered table-responsive">
-        <tbody>
+    <table  class="table table-bordered table-responsive w3-medium ">
+        <tbody class="text-center">
         <tr>
             <th class="headers" ng-if="CompareModels()"> <br> Specs </th>
             <td class="names"  ng-repeat="x in devices"  ng-if="x.chosen[0] || x.chosen[1]">
@@ -211,9 +212,9 @@
             </td>
         <tr/>
         <tr >
-            <td class="winner" colspan="3">
+            <td class="winner " colspan="3">
 
-            <span ng-repeat="x in devices"  ng-if="(x.chosen[0] || x.chosen[1]) && x.winner" >
+            <span class="w3-xlarge" ng-repeat="x in devices"  ng-if="(x.chosen[0] || x.chosen[1]) && x.winner" >
                 <img  class="recommendation_logo" ng-src="images/scr.png" >
                 <strong>{{ x.Name }}</strong>
                 <img class="winner_img" ng-src="{{x.image}}" alt="winner">

@@ -1,4 +1,17 @@
-
+html {
+    min-height:100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    position:relative;
+    width:100%;
+}
+body {
+    color:#000;
+    font-weight:100;
+    margin:0;
+    min-height:100%;
+    width:100%;
+}
 
 .container {
     margin-left:0;
@@ -28,13 +41,10 @@
 .winner {
     text-align: center;
     color: #398439;
-    font-size: 30px;
     font-weight:bold;
 }
 
-.table {
-    text-align: center;
-}
+
 
 
 .winner_img {
@@ -55,17 +65,17 @@
 
 
 #myCarousel{
-    margin-left: 170px;
+    margin-left: 25%;
 }
 
 #compare{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 30px;
+    padding-left: 15%;
+    padding-right: 25%;
+    margin-top: 4%;
 }
 
 #selection {
-    margin-left: 200px;
+    margin-left: 25%;
 
 }
 .hida {
@@ -124,6 +134,7 @@
 .dropdown dd ul li a:hover {
     background-color:#245580 ;
 }
+
 select, .dropdown {
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -144,14 +155,16 @@ select, .dropdown {
 
 }
 
+.w3-container select {
+    color : #fff;
+}
+
 option{
     text-align: center;
 }
 
 #headline {
-    font-family: sans-serif;
-    margin-left:200px;
-    margin-bottom:100px;
+    margin-bottom:10%;
 }
 
 .ImageDisplay {
@@ -164,12 +177,12 @@ option{
 }
 
 #drop_downs {
-    margin-top:30px;
-    margin-bottom: 30px;
+    margin-top:4%;
+    margin-bottom: 4%;
 }
 
 .video {
-    margin-left: 200px;
+    margin-left: 28%;
 }
 .btn{
     line-height: 1;
@@ -187,12 +200,12 @@ option{
 }
 
 #filter {
-    margin-left: 200px;
-    margin-top : 50px;
+    margin-left: 25%;
+    margin-top : 5%;
     display: none;
 
 }
 
 #filter_btn {
-    margin-top: 10px;
+    margin-top: 1.5%;
 }
