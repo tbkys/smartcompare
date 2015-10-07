@@ -784,8 +784,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
                            " Please select again. ");
         }
         else if (filtered_devices_length==1){
-            $window.alert("There is only one corresponding device to the properties you've selected." +
-                " Please select again. ");
+            $window.alert("There is only one corresponding device to the properties you've selected:    "+ $scope.DevicesToShow[0].Name );
         }
         else {
             ChangeVisibility('selection','filter');
