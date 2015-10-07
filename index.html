@@ -2,7 +2,7 @@
 <html lang="en" ng-app="SpCompareApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , user-scalable=yes">
 
     <title>Smart Compare - tbk & ys</title>
 
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style/bootstrap-table.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" a href="style/bootstrap-select.min.css">
+    <link rel="stylesheet" href="style/w3.css">
 
 </head>
 <body ng-controller="SpCompareController" >
@@ -73,7 +74,7 @@
 </div>
 
 <!-- filtering devices by custom preferences section -->
-<div id="filter" ng-init="fillPricesArray()" >
+<div id="filter" ng-init="fillPricesArray()" class="w3-container" >
     <h1 id="headline"> Choose Your Preferences </h1>
     <!-- filter by manufacture -->
     <dl class="dropdown">
@@ -108,7 +109,7 @@
 </div>
 
 <!--  devices select section -->
-<div id="selection" >
+<div id="selection" class="w3-container">
 
     <div id="priority" class="btn-group">
         <h3>What are the most important features for you?</h3>
@@ -138,7 +139,7 @@
 
 <div id="compare" ng-hide="SameDevice()">
 
-    <table  class="table table-bordered table-responsive">
+    <table  class="w3-table table-bordered table-responsive">
         <tbody>
         <tr>
             <th class="headers" ng-if="CompareModels()"> <br> Specs </th>
