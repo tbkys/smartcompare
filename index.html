@@ -206,10 +206,16 @@
                 <strong>{{ x.Battery }} mAh</strong>
             </td>
         <tr/>
-        <tr class="active">
+        <tr>
             <td> Price </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,8)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.price }} $</strong>
+            </td>
+        <tr/>
+        <tr class="active">
+            <td> Value For Money </td>
+            <td ng-repeat="x in devices" ng-style="set_color(x,9)" ng-if="x.chosen[0] || x.chosen[1]">
+                <strong>{{ ValueForMoney(x) }} </strong>
             </td>
         <tr/>
         <tr >

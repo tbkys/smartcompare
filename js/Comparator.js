@@ -38,7 +38,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 520,
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
 
         },
@@ -62,7 +62,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price : 650,
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
 
         },
@@ -86,7 +86,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price : 890,
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -109,7 +109,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price : 1085,
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -132,7 +132,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price : 700,
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -155,7 +155,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 400,
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -178,7 +178,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 540 ,
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -201,7 +201,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 620,
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -224,7 +224,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 290,
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -247,7 +247,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 350,
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -270,7 +270,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 300,
             manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -293,7 +293,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 400,
             manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -316,7 +316,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 460,
             manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -339,7 +339,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 900,
             manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -362,7 +362,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 200,
             manufacture:"Asus",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -385,7 +385,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 470,
             manufacture:"HTC",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -408,7 +408,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 400,
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -431,7 +431,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 580,
             manufacture:"Huawei",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -454,7 +454,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 210,
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -477,7 +477,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 300,
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         },
         {
@@ -500,7 +500,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             price: 440,
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
         }
     ];
@@ -514,7 +514,8 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         FrontCamera: ["Front Camera",false],
         Camera: ["Camera",false],
         RAM: ["RAM Memory",false],
-        Battery:["Battery",false]
+        Battery:["Battery",false],
+        VFM:["Value For Money",false]
     };
 
     $scope.select_default = "Choose a device";
@@ -590,8 +591,17 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         else if (p2.price < p1.price) {
             p2.category_winner[i] = true;
         }
+        i++;
+        if ($scope.ValueForMoney(p1)>$scope.ValueForMoney(p2)){
+            p1.category_winner[i] =true;
+        }
+        else if ($scope.ValueForMoney(p2)>$scope.ValueForMoney(p1)){
+            p2.category_winner[i] = true;
+        }
+
     };
 
+    //a scoring function , giving bigger score to priorities selected
     $scope.Scoring = function (p1) {
         var result=0;
         var priority_bonus =4;
@@ -721,8 +731,8 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         else if(p1.FrontCamera>3){
             p1.score[i]+=1;
         }
-        if($scope.Priorities.FrontCamera[1]){
-            p1.score[i]*= priority_bonus;
+        if($scope.Priorities.FrontCamera[1]) {
+            p1.score[i] *= priority_bonus;
 
         }
         result += p1.score[i];
@@ -816,16 +826,29 @@ $scope.initialize=function(p1){
  compare selected devices
  */
 $scope.CompareModels = function(){
-    $scope.initialize($scope.first_selected_Item);
-    $scope.initialize($scope.second_selected_Item);
-    $scope.Compare($scope.first_selected_Item,$scope.second_selected_Item);
-    $scope.Scoring($scope.first_selected_Item);
-    $scope.Scoring($scope.second_selected_Item);
-    if($scope.first_selected_Item.final_score>$scope.second_selected_Item.final_score){
-        $scope.first_selected_Item.winner=true;
+    var first_device =$scope.first_selected_Item;
+    var second_device = $scope.second_selected_Item;
+    var priority_bonus = 5;
+    $scope.initialize(first_device);
+    $scope.initialize(second_device);
+    $scope.Compare(first_device,second_device);
+    $scope.Scoring(first_device);
+    $scope.Scoring(second_device);
+    var VFM_first =$scope.ValueForMoney(first_device);
+    var VFM_second =$scope.ValueForMoney(second_device);
+    if ($scope.Priorities.VFM[1]==true || $scope.isTie()) {
+        if ((VFM_first>VFM_second) ||(VFM_first==VFM_second && first_device.price<second_device.price)) {
+            first_device.final_score += priority_bonus;
+        }
+        else if ((VFM_first<VFM_second)||(VFM_first==VFM_second && first_device.price>second_device.price)) {
+            second_device.final_score+=priority_bonus;
+        }
     }
-    else if( $scope.second_selected_Item.final_score> $scope.first_selected_Item.final_score){
-        $scope.second_selected_Item.winner=true;
+    if(first_device.final_score>second_device.final_score){
+        first_device.winner=true;
+    }
+    else if( second_device.final_score> first_device.final_score){
+        second_device.winner=true;
     }
     return true;
 };
@@ -847,17 +870,30 @@ $scope.fillPricesArray=function(){
         var elem =i;
         $scope.priceLimit.push(elem);
     }
-}
+};
+
+$scope.ValueForMoney = function(device) {
+    var val= device.final_score / device.price *100;
+    return Math.round(val);
+};
 
 });
 
+function hideAddressBar()
+{
+    if(!window.location.hash)
+    {
+        if(document.height < window.outerHeight)
+        {
+            document.body.style.height = (window.outerHeight + 50) + 'px';
+        }
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    window.addEventListener('load', function() {
-        setTimeout(function() { window.scrollTo(0, 1); }, 1);
-    }, false);
+        setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+    }
 }
 
+window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+window.addEventListener("orientationchange", hideAddressBar );
 $(document).on('click','.navbar-collapse.in',function(e) {
 
     if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
