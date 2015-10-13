@@ -16,15 +16,19 @@ body {
 }
 
 .container {
-    margin:0;
+    background-color: #6990e1;
+    margin-left:0;
+    margin-right:0;
 }
-
+.navbar-default{
+    background-color: #6990e1;
+}
 .navbar{
-    margin:0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    width: 100%;
     border-color: black;
     border-right: none;
     border-top: none;
@@ -162,10 +166,6 @@ select, .dropdown {
 
 .w3-container select {
     color : #fff;
-}
-
-.container{
-    background-color: #6990e1;
 }
 
 option{
