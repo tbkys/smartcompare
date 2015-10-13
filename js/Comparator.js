@@ -905,6 +905,12 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
 ChangeVisibility=function show() {
     document.getElementById(arguments[0]).style.display='block';
+    if(arguments[0]=='home'){
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#3b5998";
+    }
+    else{
+        document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+    }
     for (var i=1 ; i<arguments.length ; i++) {
         document.getElementById(arguments[i]).style.display = 'none';
     }

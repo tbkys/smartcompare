@@ -11,6 +11,8 @@ body {
     margin:0;
     min-height:100%;
     width:100%;
+    background-color: #3b5998;
+
 }
 
 .container {
@@ -24,6 +26,7 @@ body {
     left: 0;
     z-index: 9999;
     width: 100%;
+
 
 }
 
@@ -61,11 +64,6 @@ body {
 
 #compare,#selection {
     display: none;
-}
-
-
-#myCarousel{
-    margin-left: 25%;
 }
 
 #compare{
@@ -114,7 +112,10 @@ body {
 .dropdown dd ul {
     border:0;
     display:none;
+    background-color: black;
+    /*
     background-color: #28a4c9;
+    */
     left:0px;
     position:absolute;
     top:2px;
@@ -142,7 +143,9 @@ select, .dropdown {
     -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    background: #28a4c9;
+    background-color: black;
+  /*  background: #28a4c9;
+  */
     color:#fff;
     border:black;
     outline:none;
@@ -157,6 +160,10 @@ select, .dropdown {
 
 .w3-container select {
     color : #fff;
+}
+
+.container{
+    background-color: #3b5998;
 }
 
 option{
@@ -188,15 +195,21 @@ option{
     line-height: 1;
 }
 .btn-primary {
-
+    background: black;
+/*
     background: #28a4c9;
+    */
     border:none;
     margin-left:-8px;
     padding: 4px;
 }
 .btn-primary:hover {
+    background-color: black;
+    border-color:black;
+    /*
     background-color:#28a4c9;
     border-color:#28a4c9;
+    */
 }
 
 #filter {
