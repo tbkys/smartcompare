@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d45c20e-092f-41b1-a11a-d908e767bcb3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sc1.jpg" afterPath="$PROJECT_DIR$/images/sc1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/sc2.jpg" afterPath="$PROJECT_DIR$/images/sc2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Comparator.js" afterPath="$PROJECT_DIR$/js/Comparator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,21 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66786355">
-              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state vertical-scroll-proportion="3.5172415">
+              <caret line="141" column="28" selection-start-line="141" selection-start-column="28" selection-end-line="141" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comparator.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Comparator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Comparator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.655172">
-              <caret line="908" column="81" selection-start-line="908" selection-start-column="75" selection-end-line="908" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.45062837">
+              <caret line="908" column="53" selection-start-line="908" selection-start-column="53" selection-end-line="908" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -80,9 +83,9 @@
         <option value="$PROJECT_DIR$/js/ssd.js" />
         <option value="$PROJECT_DIR$/js/multiSel.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/js/Comparator.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/js/Comparator.js" />
       </list>
     </option>
   </component>
@@ -348,7 +351,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444747545802</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="style redo">
+      <created>1444749779305</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1444749779305</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -420,7 +429,8 @@
     <MESSAGE value="changed a little bit the mobile view" />
     <MESSAGE value="style changed&#10;css changes" />
     <MESSAGE value="more style changed&#10;( css changes )" />
-    <option name="LAST_COMMIT_MESSAGE" value="more style changed&#10;( css changes )" />
+    <MESSAGE value="style redo" />
+    <option name="LAST_COMMIT_MESSAGE" value="style redo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,18 +833,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Comparator.js">
+    <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.655172">
-          <caret line="908" column="81" selection-start-line="908" selection-start-column="75" selection-end-line="908" selection-end-column="81" />
+        <state vertical-scroll-proportion="3.5172415">
+          <caret line="141" column="28" selection-start-line="141" selection-start-column="28" selection-end-line="141" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/style.css">
+    <entry file="file://$PROJECT_DIR$/js/Comparator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66786355">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.45062837">
+          <caret line="908" column="53" selection-start-line="908" selection-start-column="53" selection-end-line="908" selection-end-column="53" />
           <folding />
         </state>
       </provider>

@@ -11,17 +11,17 @@ body {
     margin:0;
     min-height:100%;
     width:100%;
-    background-color: #6990e1;
+    background-color: #3f5c9a;
 
 }
 
 .container {
-    background-color: #6990e1;
+    background-color: #3f5c9a;
     margin-left:0;
     margin-right:0;
 }
 .navbar-default{
-    background-color: #6990e1;
+    background-color: #3f5c9a;
 }
 .navbar{
     position: fixed;
@@ -139,7 +139,7 @@ body {
     display:block;
 }
 .dropdown dd ul li a:hover {
-    background-color:#6990e1 ;
+    background-color:#3f5c9a ;
 }
 
 select, .dropdown {

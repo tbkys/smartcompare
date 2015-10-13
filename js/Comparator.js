@@ -906,7 +906,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 ChangeVisibility=function show() {
     document.getElementById(arguments[0]).style.display='block';
     if(arguments[0]=='home'){
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#6990e1";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#3f5c9a";
     }
     else{
         document.getElementsByTagName("body")[0].style.backgroundColor = "white";
