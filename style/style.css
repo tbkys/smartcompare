@@ -22,7 +22,6 @@ body {
 .container,#home {
     margin-left:0;
     margin-right:0;
-    padding-right: 0;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
@@ -37,22 +36,17 @@ a:hover, .navbar-default .navbar-nav > .active > a:focus {
 
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    color: #262626;
-    text-decoration: none;
-    background-color: #66CCFF;  /*change color of links in drop down here*/
-}
 
 .nav > li > a:hover,
 .nav > li > a:focus {
     text-decoration: none;
-    background-color: silver; /*Change rollover cell color here*/
+    box-shadow: 0px 0px 2px #888;
 }
 
 
 .navbar-default .navbar-nav > li > a {
-    color: white; /*Change active text color here*/
+    color: #727272; /*Change active text color here*/
+
 }
 
 .navbar-default{
