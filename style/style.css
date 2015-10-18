@@ -15,24 +15,53 @@ body {
 
 }
 
-.container {
+#home {
     background-color: #3f5c9a;
+}
+
+.container,#home {
     margin-left:0;
     margin-right:0;
+    padding-right: 0;
 }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white; /*BACKGROUND color for active*/
+    background-color: #030033;
+}
+
+.navbar-default {
+    background-color: #CFD8DC;
+    border-color: #030033;
+
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #66CCFF;  /*change color of links in drop down here*/
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: white; /*Change active text color here*/
+}
+
 .navbar-default{
-    background-color: #3f5c9a;
-}
-.navbar{
+    background-image:none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
-    border-color: black;
-    border-right: none;
-    border-top: none;
-
 
 }
 
@@ -75,7 +104,7 @@ body {
 #compare{
     padding-left: 15%;
     padding-right: 25%;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 #selection {

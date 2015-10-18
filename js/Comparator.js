@@ -643,14 +643,14 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         i++; // Screen + Resolution
 
         if($scope.Priorities.Screen[1]){ // Big Screen marked
-            if(p1.Screen>=5){
-                p1.score[i]+=1;
+            if(p1.Screen>=5.7){
+                p1.score[i]+=3;
             }
             else if(p1.Screen>=5.5){
                 p1.score[i]+=2;
             }
-            else if(p1.Screen>=5.7){
-                p1.score[i]+=3;
+            else if(p1.Screen>=5){
+                p1.score[i]+=1;
             }
             p1.score[i]*= priority_bonus;
         }
@@ -802,6 +802,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
     };
 
 
+
+
+
 /*
  mark the chosen deices for comparison
  */
@@ -836,6 +839,13 @@ $scope.CompareModels = function(){
     $scope.Scoring(second_device);
     var VFM_first =$scope.ValueForMoney(first_device);
     var VFM_second =$scope.ValueForMoney(second_device);
+
+    if(first_device.final_score>second_device.final_score){
+        first_device.winner=true;
+    }
+    else if( second_device.final_score> first_device.final_score){
+        second_device.winner=true;
+    }
     if ($scope.Priorities.VFM[1]==true || $scope.isTie()) {
         if ((VFM_first>VFM_second) ||(VFM_first==VFM_second && first_device.price<second_device.price)) {
             first_device.final_score += priority_bonus;
@@ -843,12 +853,6 @@ $scope.CompareModels = function(){
         else if ((VFM_first<VFM_second)||(VFM_first==VFM_second && first_device.price>second_device.price)) {
             second_device.final_score+=priority_bonus;
         }
-    }
-    if(first_device.final_score>second_device.final_score){
-        first_device.winner=true;
-    }
-    else if( second_device.final_score> first_device.final_score){
-        second_device.winner=true;
     }
     return true;
 };
