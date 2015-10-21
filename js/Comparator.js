@@ -877,8 +877,8 @@ $scope.fillPricesArray=function(){
 };
 
 $scope.ValueForMoney = function(device) {
-    var val= device.final_score / device.price *100;
-    return Math.round(val);
+    return Math.round(device.final_score / device.price) *100;
+
 };
 
 });
@@ -898,6 +898,7 @@ function hideAddressBar()
 
 window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
 window.addEventListener("orientationchange", hideAddressBar );
+
 $(document).on('click','.navbar-collapse.in',function(e) {
 
     if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
