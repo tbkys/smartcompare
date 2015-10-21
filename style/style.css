@@ -9,11 +9,13 @@ body {
     color:#000;
     font-weight:100;
     margin:0;
-    min-height:100%;
     width:100%;
     background-color: #3f5c9a;
-
+    min-height:540px;
 }
+
+body[orient="portrait"] { min-height:540px; }
+body[orient="landscape"] { min-height:400px; }
 
 #home {
     background-color: #3f5c9a;
