@@ -5,6 +5,7 @@ var SpCompareApp = angular.module('SpCompareApp', []);
 SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
     $scope.manufactures = [
+        {Name:"All Manufactures", selected: false},
         {Name:"Apple", selected: false},
         {Name:"LG", selected: false},
         {Name:"Samsung", selected: false},
@@ -1080,7 +1081,7 @@ $scope.SameDevice = function() {
 fills the price limit array with the price ranges
  */
 $scope.fillPricesArray=function(){
-    for (var i=150; i<=700 ; i+=50){
+    for (var i=150; i<=900 ; i+=50){
         var elem =i;
         $scope.priceLimit.push(elem);
     }
@@ -1090,6 +1091,16 @@ $scope.ValueForMoney = function(device) {
     return Math.round(device.final_score / device.price *100);
 
 };
+
+
+    $scope.isAllManufactures = function(){
+        if ($scope.manufactures[0].selected){
+            for(var i=1 ; i<$scope.manufactures.length ; i++) {
+
+                $scope.manufactures[i].selected= true;
+            }
+        }
+    };
 
 });
 
@@ -1131,5 +1142,4 @@ ChangeVisibility=function show() {
     }
     return false;
 };
-
 
