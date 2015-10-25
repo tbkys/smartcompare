@@ -5,7 +5,7 @@ var SpCompareApp = angular.module('SpCompareApp', []);
 SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
     $scope.manufactures = [
-        {Name:"All Manufactures", selected: false},
+        //{Name:"All Manufactures", selected: false},
         {Name:"Apple", selected: false},
         {Name:"LG", selected: false},
         {Name:"Samsung", selected: false},
@@ -1016,92 +1016,97 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
 
 
-/*
- mark the chosen deices for comparison
- */
-$scope.setChoice=function(index) {
-    var i;
-    for (i=0;i< $scope.devices.length;i++){
-        $scope.devices[i].chosen[index]=false;
-    }
-    index===0 ? $scope.first_selected_Item.chosen[index]=true : $scope.second_selected_Item.chosen[index]=true;
-    return true;
-};
-
-$scope.initialize=function(p1){
-    for (var i=0 ; i< p1.score.length;i++){
-        p1.score[i]=0;
-        p1.category_winner[i] = false;
-    }
-    p1.winner=false;
-};
-
-/*
- compare selected devices
- */
-$scope.CompareModels = function(){
-    var first_device =$scope.first_selected_Item;
-    var second_device = $scope.second_selected_Item;
-    var priority_bonus = 5;
-    $scope.initialize(first_device);
-    $scope.initialize(second_device);
-    $scope.Compare(first_device,second_device);
-    $scope.Scoring(first_device);
-    $scope.Scoring(second_device);
-    var VFM_first =$scope.ValueForMoney(first_device);
-    var VFM_second =$scope.ValueForMoney(second_device);
-
-    if(first_device.final_score>second_device.final_score){
-        first_device.winner=true;
-    }
-    else if( second_device.final_score> first_device.final_score){
-        second_device.winner=true;
-    }
-    if ($scope.Priorities.VFM[1]==true || $scope.isTie()) {
-        if ((VFM_first>VFM_second) ||(VFM_first==VFM_second && first_device.price<second_device.price)) {
-            first_device.final_score += priority_bonus;
+    /*
+     mark the chosen deices for comparison
+    */
+    $scope.setChoice=function(index) {
+        var i;
+        for (i=0;i< $scope.devices.length;i++){
+            $scope.devices[i].chosen[index]=false;
         }
-        else if ((VFM_first<VFM_second)||(VFM_first==VFM_second && first_device.price>second_device.price)) {
-            second_device.final_score+=priority_bonus;
+        index===0 ? $scope.first_selected_Item.chosen[index]=true : $scope.second_selected_Item.chosen[index]=true;
+        return true;
+    };
+
+    $scope.initialize=function(p1){
+        for (var i=0 ; i< p1.score.length;i++){
+            p1.score[i]=0;
+            p1.category_winner[i] = false;
         }
-    }
-    return true;
-};
+        p1.winner=false;
+    };
 
-$scope.isTie = function() {
-    return !($scope.first_selected_Item.winner || $scope.second_selected_Item.winner);
-};
+    /*
+     compare selected devices
+     */
+    $scope.CompareModels = function(){
+        var first_device =$scope.first_selected_Item;
+        var second_device = $scope.second_selected_Item;
+        var priority_bonus = 5;
+        $scope.initialize(first_device);
+        $scope.initialize(second_device);
+        $scope.Compare(first_device,second_device);
+        $scope.Scoring(first_device);
+        $scope.Scoring(second_device);
+        var VFM_first =$scope.ValueForMoney(first_device);
+        var VFM_second =$scope.ValueForMoney(second_device);
 
-$scope.SameDevice = function() {
-    return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
-};
-
-
-/*
-fills the price limit array with the price ranges
- */
-$scope.fillPricesArray=function(){
-    for (var i=150; i<=900 ; i+=50){
-        var elem =i;
-        $scope.priceLimit.push(elem);
-    }
-};
-
-$scope.ValueForMoney = function(device) {
-    return Math.round(device.final_score / device.price *100);
-
-};
-
-
-    $scope.isAllManufactures = function(){
-        if ($scope.manufactures[0].selected){
-            for(var i=1 ; i<$scope.manufactures.length ; i++) {
-
-                $scope.manufactures[i].selected= true;
+        if(first_device.final_score>second_device.final_score){
+            first_device.winner=true;
+        }
+        else if( second_device.final_score> first_device.final_score){
+            second_device.winner=true;
+        }
+        if ($scope.Priorities.VFM[1]==true || $scope.isTie()) {
+            if ((VFM_first>VFM_second) ||(VFM_first==VFM_second && first_device.price<second_device.price)) {
+                first_device.final_score += priority_bonus;
             }
+            else if ((VFM_first<VFM_second)||(VFM_first==VFM_second && first_device.price>second_device.price)) {
+                second_device.final_score+=priority_bonus;
+            }
+        }
+        return true;
+    };
+
+    $scope.isTie = function() {
+        return !($scope.first_selected_Item.winner || $scope.second_selected_Item.winner);
+    };
+
+    $scope.SameDevice = function() {
+        return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
+    };
+
+
+    /*
+    fills the price limit array with the price ranges
+     */
+    $scope.fillPricesArray=function(){
+        for (var i=150; i<=900 ; i+=50){
+            var elem =i;
+            $scope.priceLimit.push(elem);
         }
     };
 
+    $scope.ValueForMoney = function(device) {
+        return Math.round(device.final_score / device.price *100);
+
+    };
+
+    $scope.checkAll = function () {
+        $scope.selectedAll = ($scope.selectedAll)? true : false;
+        if ($scope.selectedAll) {
+            $("#manu_title").html(' <span class="hida">You Selected All</span>');
+        }
+        else {
+            $("#manu_title").html(' <span class="hida">Select Manufactures</span>') ;
+        }
+        angular.forEach($scope.manufactures, function (item) {
+            item.selected = $scope.selectedAll;
+        });
+
+
+
+    };
 });
 
 function hideAddressBar()

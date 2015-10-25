@@ -82,7 +82,7 @@
     <!-- filter by manufacture -->
     <dl class="dropdown">
         <dt>
-            <a href="#">
+            <a href="#" id="manu_title">
                 <span class="hida">Select Manufactures</span>
                 <p class="multiSel"></p>
             </a>
@@ -90,14 +90,19 @@
 
         <dd>
             <div class="multiSelect">
-                <ul>
+                <ul >
+                    <li>
+                        <label for="check_all" id="checkall_label">
+                        <input type="checkbox" id="check_all" ng-model="selectedAll" ng-click="checkAll()" />
+                        Check All
+                        </label>
+                    </li>
                     <li ng-repeat="x in manufactures">
                         <label for="{{$id}}">
                             <input type="checkbox" id="{{$id}}" value="{{x.Name}}" ng-model="x.selected" />
                             {{x.Name}}
                         </label>
                     </li>
-                    <span ng-if="isAllManufactures()">
                 </ul>
             </div>
         </dd>
