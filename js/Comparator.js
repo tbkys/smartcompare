@@ -987,6 +987,17 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         return false;
     };
 
+    $scope.NoDeviceSelected = function() {
+        var i;
+        for (i=0 ; i<$scope.manufactures.length;i++){
+            if ($scope.manufactures[i].selected){
+                return false;
+            }
+        }
+        return true;
+
+    };
+
     $scope.FilterDevices = function() {
         $scope.DevicesToShow=[];
         for (var i=0 ; i<$scope.devices.length ; i++) {
@@ -1000,7 +1011,11 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             }
         }
         var filtered_devices_length = $scope.DevicesToShow.length;
-        if (filtered_devices_length==0){
+        if ($scope.NoDeviceSelected()){
+            $window.alert("No manufacture was selected." +
+                " Please select at least one manufacture.")
+        }
+        else if (filtered_devices_length==0){
             $window.alert("There are no corresponding devices to the properties you've selected." +
                            " Please select again. ");
         }
@@ -1147,4 +1162,5 @@ ChangeVisibility=function show() {
     }
     return false;
 };
+
 
