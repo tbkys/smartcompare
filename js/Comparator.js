@@ -433,6 +433,30 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         },
         {
             chosen : [false,false],
+            image : "http://cdn2.gsmarena.com/vv/bigpic/sony-z5-.jpg",
+            winner:false,
+            Name: 'Sony Xperia Z5 Premium',
+            Technology: 'LTE/HSPA/GSM',
+            Year: 2015,
+            Month: 11,
+            Weight: 180,
+            OS: 'Android 5.1.1',
+            Screen: 5.2,
+            Resolution: 2160,
+            Resolution1: 3840,
+            FrontCamera:5.1 ,
+            Camera: 23,
+            RAM: 3,
+            ROM:[32],
+            Battery: 3430,
+            price: [625],
+            manufacture:"Sony",
+            score: [0,0,0,0,0,0,0,0],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
+            final_score: 0
+        },
+        {
+            chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/asus-zenfone-2-new.jpg",
             winner:false,
             Name: 'Asus Zenfone 2',
@@ -523,6 +547,30 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             ROM:[16,32],
             Battery: 3000,
             price: [400,480],
+            manufacture:"Motorola",
+            score: [0,0,0,0,0,0,0,0],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
+            final_score: 0
+        },
+        {
+            chosen : [false,false],
+            image : "http://cdn2.gsmarena.com/vv/bigpic/moto-x-play-r.jpg",
+            winner:[false,false],
+            Name: 'Motorola Moto X Play ',
+            Technology: 'LTE/HSPA/GSM',
+            Year: 2015,
+            Month: 8,
+            Weight: 169,
+            OS: 'Android 5.1.1',
+            Screen: 5.5,
+            Resolution: 1080 ,
+            Resolution1: 1920 ,
+            FrontCamera:5 ,
+            Camera: 21,
+            RAM: 2,
+            ROM:[16,32],
+            Battery: 3630,
+            price: [360,460],
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -667,6 +715,30 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             ROM:[32],
             Battery: 3000,
             price: [385],
+            manufacture:"LG",
+            score: [0,0,0,0,0,0,0,0],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
+            final_score: 0
+        },
+        {
+            chosen : [false,false],
+            image : "http://cdn2.gsmarena.com/vv/bigpic/lg-v10-new1.jpg",
+            winner:false,
+            Name: 'LG V10 ',
+            Technology: 'LTE/HSPA/GSM',
+            Year: 2015,
+            Month: 10,
+            Weight: 192,
+            OS: 'Android 5.1.1',
+            Screen: 5.7,
+            Resolution: 1440,
+            Resolution1: 2560,
+            FrontCamera:5 ,
+            Camera: 16,
+            RAM: 4,
+            ROM:[64],
+            Battery: 3000,
+            price: [620],
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -904,7 +976,15 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             p1.score[i]*= priority_bonus;
         }
         else {
-            if (p1.Resolution === 1440) {
+            if (p1.Resolution === 2160){
+                if (p1.Screen <= 5) {
+                    p1.score[i] += 4;
+                }
+                else {
+                    p1.score[i] += 3;
+                }
+            }
+            else if (p1.Resolution === 1440) {
                 if (p1.Screen <= 5) {
                     p1.score[i] += 3;
                 }
@@ -963,10 +1043,11 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         if ((p1.Battery >= 2700 && p1.Screen<=5.5) || (p1.Battery>=2500 && p1.Screen<=5)) {
             p1.score[i] += 3;
         }
-        else if (p1.Battery > 3000){
+        //big screen > 5.5
+        else if (p1.Battery > 3200){
             p1.score[i] +=2;
         }
-        else if (p1.Battery > 2500){
+        else if (p1.Battery > 2800){
             p1.score[i] +=1 ;
         }
         if($scope.Priorities.Battery[1]){
