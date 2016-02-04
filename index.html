@@ -215,25 +215,31 @@
                 <strong>{{ x.FrontCamera }} MP</strong>
             </td>
         <tr/>
-        <tr >
+        <tr>
             <td> RAM Memory </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,5)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.RAM }} GB RAM</strong>
             </td>
         <tr/>
         <tr class="active">
+            <td> ROM Memory </td>
+            <td ng-repeat="x in devices"  ng-if="x.chosen[0] || x.chosen[1]">
+                <strong> {{ConcatValues(x.ROM)}} GB</strong>
+            </td>
+        <tr/>
+        <tr >
             <td> Battery </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,6)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Battery }} mAh</strong>
             </td>
         <tr/>
-        <tr>
+        <tr class="active">
             <td> Price </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,8)" ng-if="x.chosen[0] || x.chosen[1]">
-                <strong>{{ x.price }} $</strong>
+                <strong> {{ConcatValues(x.price)}} $</strong>
             </td>
         <tr/>
-        <tr class="active">
+        <tr>
             <td> Value For Money </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,9)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ ValueForMoney(x) }} </strong>

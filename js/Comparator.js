@@ -36,8 +36,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:1.2 ,
             Camera: 8,
             RAM: 1,
+            ROM: [16,32],
             Battery: 1560,
-            price: 520,
+            price: [419,440],
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -60,8 +61,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:1.2 ,
             Camera: 8,
             RAM: 1,
+            ROM:[16,64],
             Battery: 1810,
-            price : 650,
+            price : [550,650],
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -84,8 +86,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 12,
             RAM: 2,
+            ROM:[16,64,128],
             Battery: 1715,
-            price : 890,
+            price : [650,750,850],
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -107,8 +110,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 12,
             RAM: 2,
+            ROM:[16,64,128],
             Battery: 2915,
-            price : 1085,
+            price : [750,850,950],
             manufacture:"Apple",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -130,8 +134,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 16,
             RAM: 4,
+            ROM:[32,64],
             Battery: 3000,
-            price : 700,
+            price : [620,790],
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -153,8 +158,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:2 ,
             Camera: 16,
             RAM: 2,
+            ROM:[16],
             Battery: 2800,
-            price: 400,
+            price: [330],
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -176,8 +182,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 16,
             RAM: 3,
+            ROM:[32,64],
             Battery: 2550,
-            price: 540 ,
+            price: [460,613],
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -199,8 +206,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 16,
             RAM: 3,
+            ROM:[32,64],
             Battery: 2600,
-            price: 620,
+            price: [550,660],
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -222,8 +230,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 13,
             RAM: 1.5,
+            ROM:[8,16],
             Battery: 2600,
-            price: 220,
+            price: [190,235],
             manufacture:"Samsung",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -245,8 +254,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:1.3 ,
             Camera: 8,
             RAM: 2,
+            ROM:[16,32],
             Battery: 2300,
-            price: 290,
+            price: [200,235],
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -268,8 +278,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 12.3,
             RAM: 2,
+            ROM:[16,32],
             Battery: 2700,
-            price: 370,
+            price: [300,350],
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -291,8 +302,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:2 ,
             Camera: 13,
             RAM: 3,
+            ROM:[32,64],
             Battery: 3220,
-            price: 350,
+            price: [350,400],
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -314,8 +326,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:8,
             Camera: 12.3,
             RAM: 3,
+            ROM:[32,64,128],
             Battery: 3450,
-            price: 500,
+            price: [500,550,650],
             manufacture:"Huawei",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -338,8 +351,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 13,
             RAM: 3,
+            ROM:[16,32],
             Battery: 3100,
-            price: 300,
+            price: [300,350],
             manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -361,8 +375,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 13,
             RAM: 4,
+            ROM:[64],
             Battery: 3300,
-            price: 400,
+            price: [390],
             manufacture:"OnePlus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -384,8 +399,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:2.2 ,
             Camera: 20,
             RAM: 3,
+            ROM:[16,32],
             Battery: 3100,
-            price: 460,
+            price: [390,450],
             manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -407,8 +423,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5.1 ,
             Camera: 23,
             RAM: 3,
+            ROM:[32],
             Battery: 2900,
-            price: 900,
+            price: [540],
             manufacture:"Sony",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -430,8 +447,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 13,
             RAM: 4,
+            ROM:[16,32,64],
             Battery: 3000,
-            price: 200,
+            price: [230,250,300],
             manufacture:"Asus",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -453,8 +471,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:4 ,
             Camera: 20,
             RAM: 3,
+            ROM:[32],
             Battery: 2840,
-            price: 470,
+            price: [240],
             manufacture:"HTC",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -476,8 +495,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:4 ,
             Camera: 13,
             RAM: 3,
+            ROM:[16,32],
             Battery: 2150,
-            price: 400,
+            price: [390,490],
             manufacture:"HTC",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -500,8 +520,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 21,
             RAM: 3,
+            ROM:[16,32],
             Battery: 3000,
-            price: 400,
+            price: [400,480],
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -523,8 +544,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5 ,
             Camera: 13,
             RAM: 2,
+            ROM:[8,16],
             Battery: 2470,
-            price: 220,
+            price: [180,220],
             manufacture:"Motorola",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -546,8 +568,33 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:8 ,
             Camera: 13,
             RAM: 3,
+            ROM:[64],
             Battery: 2600,
-            price: 580,
+            price: [540],
+            manufacture:"Huawei",
+            score: [0,0,0,0,0,0,0,0],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
+            final_score: 0
+        },
+        {
+            chosen : [false,false],
+            image : "http://cdn2.gsmarena.com/vv/bigpic/huawei-mate-8r1.jpg",
+            winner:false,
+            Name: 'Huawei Mate 8 ',
+            Technology: 'LTE/HSPA/GSM',
+            Year: 2015,
+            Month: 11,
+            Weight: 185,
+            OS: 'Android 6',
+            Screen: 6,
+            Resolution: 1080,
+            Resolution1: 1920,
+            FrontCamera:8 ,
+            Camera: 16,
+            RAM: 4,
+            ROM:[64],
+            Battery: 4000,
+            price: [730],
             manufacture:"Huawei",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -569,32 +616,10 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5,
             Camera: 13,
             RAM: 2,
+            ROM:[16],
             Battery: 2200,
-            price: 250,
+            price: [207],
             manufacture:"Huawei",
-            score: [0,0,0,0,0,0,0,0],
-            category_winner: [false,false,false,false,false,false,false,false,false,false],
-            final_score: 0
-        },
-        {
-            chosen : [false,false],
-            image : "http://cdn2.gsmarena.com/vv/bigpic/lg-g2-ofic.jpg",
-            winner:false,
-            Name: 'LG G2 ',
-            Technology: 'LTE/HSPA/GSM',
-            Year: 2013,
-            Month: 9,
-            Weight: 143,
-            OS: 'Android 5.1',
-            Screen: 5.2,
-            Resolution: 1080,
-            Resolution1: 1920,
-            FrontCamera:2.1 ,
-            Camera: 13,
-            RAM: 2,
-            Battery: 3000,
-            price: 210,
-            manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
             final_score: 0
@@ -615,8 +640,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:2.1 ,
             Camera: 13,
             RAM: 3,
+            ROM:[16,32],
             Battery: 3000,
-            price: 300,
+            price: [262,254],
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -638,8 +664,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:8 ,
             Camera: 16,
             RAM: 3,
+            ROM:[32],
             Battery: 3000,
-            price: 440,
+            price: [385],
             manufacture:"LG",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -661,8 +688,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5,
             Camera: 13,
             RAM: 2,
+            ROM:[16],
             Battery: 3000,
-            price: 160,
+            price: [180],
             manufacture:"Lenovo",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -684,8 +712,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5,
             Camera: 13,
             RAM: 2,
+            ROM:[16,32],
             Battery: 3100,
-            price: 160,
+            price: [155,190],
             manufacture:"Meizu",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -707,8 +736,9 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             FrontCamera:5,
             Camera: 20,
             RAM: 3,
+            ROM:[16,32],
             Battery: 3150,
-            price: 400,
+            price: [320,400],
             manufacture:"Meizu",
             score: [0,0,0,0,0,0,0,0],
             category_winner: [false,false,false,false,false,false,false,false,false,false],
@@ -796,7 +826,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             p2.category_winner[i] = true;
         }
         i++; // move to [8] price
-        if (p1.price < p2.price) {
+        if ($scope.avgPrice(p1) < $scope.avgPrice(p2)) {
             p1.category_winner[i] = true;
         }
         else if (p2.price < p1.price) {
@@ -811,6 +841,14 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         }
 
     };
+
+    $scope.avgPrice = function (device) {
+        var ret_val=0;
+        for (var i=0;i<device.price.length;i++){
+            ret_val+=device.price[i];
+        }
+        return ret_val / device.price.length;
+    }
 
     //a scoring function , giving bigger score to priorities selected
     $scope.Scoring = function (p1) {
@@ -1002,7 +1040,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         $scope.DevicesToShow=[];
         for (var i=0 ; i<$scope.devices.length ; i++) {
             for (var j=0 ; j<$scope.manufactures.length ; j++){
-                if ($scope.devices[i].price<=$scope.priceLmt && $scope.devices[i].manufacture == $scope.manufactures[j].Name
+                if ($scope.devices[i].price[0]<=$scope.priceLmt && $scope.devices[i].manufacture == $scope.manufactures[j].Name
                     && $scope.manufactures[j].selected) {
                     $scope.DevicesToShow.push($scope.devices[i]);
                     break;
@@ -1091,6 +1129,18 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         return ($scope.first_selected_Item.Name == $scope.second_selected_Item.Name);
     };
 
+    /*
+    flatten array of attributes
+     */
+    $scope.ConcatValues = function(attr) {
+        var ret_str ="";
+        for (var i=0; i<attr.length;i++){
+            ret_str = ret_str.concat(attr[i]).concat("/");
+        }
+        return ret_str.slice(0,-1);
+
+    }
+
 
     /*
     fills the price limit array with the price ranges
@@ -1103,7 +1153,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
     };
 
     $scope.ValueForMoney = function(device) {
-        return Math.round(device.final_score / device.price *100);
+        return Math.round(device.final_score / $scope.avgPrice(device) *100);
 
     };
 
