@@ -24,7 +24,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5s-ofic.jpg",
             winner:false,
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Name: 'iPhone 5S ',
             Year: 2013,
             Month: 9,
@@ -49,7 +49,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg",
             winner:false,
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Name: 'iPhone 6 ',
             Year: 2014,
             Month: 9,
@@ -74,7 +74,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/iphone-6s-ofic.jpg",
             winner:false,
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Name: 'iPhone 6S ',
             Year: 2015,
             Month: 9,
@@ -98,7 +98,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/iphone-6s-plus-ofic.jpg",
             winner:false,
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Name: 'iPhone 6S Plus ',
             Year: 2015,
             Month: 9,
@@ -123,7 +123,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note5.jpg",
             winner:false,
             Name: 'Samsung Galaxy Note 5',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 8,
             Weight: 171,
@@ -147,7 +147,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s5-g900f.jpg",
             winner:false,
             Name: 'Samsung Galaxy S5',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2014,
             Month: 2,
             Weight: 145,
@@ -171,7 +171,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s6.jpg",
             winner:false,
             Name: 'Samsung Galaxy S6',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 3,
             Weight: 138,
@@ -195,7 +195,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s6-edge.jpg",
             winner:false,
             Name: 'Samsung Galaxy S6 Edge',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 3,
             Weight: 132,
@@ -219,7 +219,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-j5-sm-j500f.jpg",
             winner:false,
             Name: 'Samsung Galaxy J5',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 6,
             Weight: 146,
@@ -243,7 +243,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/lg-google-nexus-5-.jpg",
             winner:false,
             Name: 'Nexus 5',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2013,
             Month: 11,
             Weight: 130,
@@ -267,7 +267,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/lg-nexus-5x-.jpg",
             winner:[false,false],
             Name: 'Nexus 5X ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 10,
             Weight: 136,
@@ -291,7 +291,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/moto-nexus-6.jpg",
             winner:[false,false],
             Name: 'Nexus 6 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2014,
             Month: 11,
             Weight: 184,
@@ -315,7 +315,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/huawei-nexus-6p-.jpg",
             winner:[false,false],
             Name: 'Nexus 6P ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 10,
             Weight: 178,
@@ -340,7 +340,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/oneplus-one.jpg",
             winner:false,
             Name: 'OnePlus One',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2014,
             Month: 6,
             Weight: 162,
@@ -364,7 +364,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/oneplus-two.jpg",
             winner:false,
             Name: 'OnePlus Two',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 7,
             Weight: 175,
@@ -388,7 +388,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/sony-xperia-z3.jpg",
             winner:false,
             Name: 'Sony Xperia Z3',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2014,
             Month: 9,
             Weight: 152,
@@ -412,7 +412,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/sony-z5-.jpg",
             winner:false,
             Name: 'Sony Xperia Z5',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 10,
             Weight: 154,
@@ -436,7 +436,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/sony-z5-.jpg",
             winner:false,
             Name: 'Sony Xperia Z5 Premium',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 11,
             Weight: 180,
@@ -460,7 +460,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/asus-zenfone-2-new.jpg",
             winner:false,
             Name: 'Asus Zenfone 2',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 3,
             Weight: 170,
@@ -484,7 +484,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/htc-one-m9-1.jpg",
             winner:false,
             Name: 'HTC One M9',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 3,
             Weight: 157,
@@ -508,7 +508,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/htc-one-a9-new.jpg",
             winner:false,
             Name: 'HTC One A9',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 11,
             Weight: 143,
@@ -533,7 +533,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/moto-x-style-r.jpg",
             winner:false,
             Name: 'Motorola Moto X Style',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 9,
             Weight: 179,
@@ -557,7 +557,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/moto-x-play-r.jpg",
             winner:[false,false],
             Name: 'Motorola Moto X Play ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 8,
             Weight: 169,
@@ -581,7 +581,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/motorola-moto-g-3rd-gen-r.jpg",
             winner:false,
             Name: 'Motorola Moto G(3rd Gen)',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 7,
             Weight: 155,
@@ -605,7 +605,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/huawei-p8.jpg",
             winner:false,
             Name: 'Huawei P8 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 4,
             Weight: 144,
@@ -629,7 +629,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/huawei-mate-8r1.jpg",
             winner:false,
             Name: 'Huawei Mate 8 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 11,
             Weight: 185,
@@ -653,7 +653,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/huawei-p8-lite1.jpg",
             winner:false,
             Name: 'Huawei P8lite',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 5,
             Weight: 131,
@@ -677,7 +677,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/lg-g3-1.jpg",
             winner:false,
             Name: 'LG G3 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2014,
             Month: 6,
             Weight: 149,
@@ -701,7 +701,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/lg-g4-.jpg",
             winner:false,
             Name: 'LG G4 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 4,
             Weight: 155,
@@ -722,10 +722,35 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         },
         {
             chosen : [false,false],
+            image : "http://cdn2.gsmarena.com/vv/bigpic/lg-g5-.jpg",
+            winner:false,
+            Name: 'LG G5',
+            Network: 'LTE/HSPA/GSM',
+            Year: 2016,
+            Month: 4,
+            Weight: 159,
+            OS: 'Android 6.0.1',
+            Screen: 5.3,
+            Resolution: 1440,
+            Resolution1: 2560,
+            FrontCamera:8 ,
+            Camera: 16,
+            Camera2: 8,
+            RAM: 4,
+            ROM:[32],
+            Battery: 2800,
+            price: [550],
+            manufacture:"LG",
+            score: [0,0,0,0,0,0,0,0],
+            category_winner: [false,false,false,false,false,false,false,false,false,false],
+            final_score: 0
+        },
+        {
+            chosen : [false,false],
             image : "http://cdn2.gsmarena.com/vv/bigpic/lg-v10-new1.jpg",
             winner:false,
             Name: 'LG V10 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 10,
             Weight: 192,
@@ -749,7 +774,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/lenovo-k3-note.jpg",
             winner:false,
             Name: 'Lenovo K3 Note ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 3,
             Weight: 150,
@@ -773,7 +798,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/meizu-m1-note2.jpg",
             winner:false,
             Name: 'Meizu M2 Note ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 6,
             Weight: 149,
@@ -797,7 +822,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             image : "http://cdn2.gsmarena.com/vv/bigpic/meizu-mx5.jpg",
             winner:false,
             Name: 'Meizu MX5 ',
-            Technology: 'LTE/HSPA/GSM',
+            Network: 'LTE/HSPA/GSM',
             Year: 2015,
             Month: 7,
             Weight: 149,
@@ -835,10 +860,10 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
     $scope.Compare = function(p1,p2){
         var i=0;
-        if (p1.Technology.substring(0,2)==='LTE' && p2.Technology.substring(0,2)!=='LTE' ) {
+        if (p1.Network.substring(0,2)==='LTE' && p2.Network.substring(0,2)!=='LTE' ) {
             p1.category_winner[i] =true;
         }
-        else  if (p2.Technology.substring(0,2)==='LTE' && p1.Technology.substring(0,2)!=='LTE' ) {
+        else  if (p2.Network.substring(0,2)==='LTE' && p1.Network.substring(0,2)!=='LTE' ) {
             p2.category_winner[i] =true;
         }
         i++; // move to [1] release date
@@ -927,7 +952,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         var result=0;
         var priority_bonus =4;
         var i=0;
-        if (p1.Technology.substring(0,2)==='LTE' ) {
+        if (p1.Network.substring(0,2)==='LTE' ) {
             p1.score[i] += 2;
             result+=2;
         }
@@ -1016,8 +1041,11 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
         else if (p1.Camera>=12) {
             p1.score[i] +=2;
         }
-        else if (p1.Camera>=8){
-            p1.score[i]+=1;
+        else if (p1.Camera>=8) {
+            p1.score[i] += 1;
+        }
+        if (p1.hasOwnProperty('Camera2')){
+            p1.score[i] +=2;
         }
         if($scope.Priorities.Camera[1]){
             p1.score[i]*= priority_bonus;
@@ -1073,11 +1101,13 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
      set red for looser and green for winner
      */
     $scope.set_color = function (p1,index) {
-        if ($scope.first_selected_Item.category_winner[index] === $scope.second_selected_Item.category_winner[index]){
+        var first_item = $scope.first_selected_Item;
+        var second_item =$scope.second_selected_Item;
+        if (first_item.category_winner[index] === second_item.category_winner[index]){
             return {color:"black"};
         }
-        if (p1 === $scope.first_selected_Item) {
-            if ($scope.first_selected_Item.category_winner[index]) {
+        if (p1 === first_item) {
+            if (first_item.category_winner[index]) {
                 return {color: "green"};
             }
             else {
@@ -1085,8 +1115,8 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             }
 
         }
-        else  if (p1 === $scope.second_selected_Item) {
-            if ($scope.second_selected_Item.category_winner[index]){
+        else  if (p1 === second_item) {
+            if (second_item.category_winner[index]){
                 return {color:"green"};
             }
             else {
@@ -1219,8 +1249,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             ret_str = ret_str.concat(attr[i]).concat("/");
         }
         return ret_str.slice(0,-1);
-
-    }
+    };
 
 
     /*
@@ -1228,8 +1257,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
      */
     $scope.fillPricesArray=function(){
         for (var i=150; i<=900 ; i+=50){
-            var elem =i;
-            $scope.priceLimit.push(elem);
+            $scope.priceLimit.push(i);
         }
     };
 
@@ -1250,9 +1278,20 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
             item.selected = $scope.selectedAll;
         });
 
-
-
     };
+
+    $scope.NotReleasedYet = function(p1){
+        var d = new Date();
+        var month = d.getMonth();
+        var year = d.getFullYear();
+        if (p1.Year > year){
+            return true;
+        }
+        else if (p1.Year == year && p1.Month>month){
+            return true;
+        }
+        return false;
+    }
 });
 
 function hideAddressBar()

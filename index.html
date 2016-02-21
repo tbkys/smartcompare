@@ -172,9 +172,9 @@
 
         </tr>
         <tr class="active">
-            <td > Technology </td>
+            <td > Network </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,0)" ng-if="x.chosen[0] || x.chosen[1]" >
-                <strong>{{x.Technology}}</strong>
+                <strong>{{x.Network}}</strong>
             </td>
 
         </tr>
@@ -188,7 +188,10 @@
         <tr class="active">
             <td > Release Date </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,1)" ng-if="x.chosen[0] || x.chosen[1]">
-                <strong>{{x.Month}} / {{x.Year}}</strong>
+                <strong>
+                    <label ng-if="NotReleasedYet(x)"> Exp.Release: </label>
+                    {{x.Month}} / {{x.Year}}
+                </strong>
             </td>
         </tr>
         <tr >
@@ -204,9 +207,18 @@
             </td>
         <tr/>
         <tr>
-            <td> Camera </td>
+            <td> Rear Camera </td>
             <td ng-repeat="x in devices" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
-                <strong>{{ x.Camera }} MP</strong>
+                <strong>{{ x.Camera }} MP </strong>
+            </td>
+        <tr/>
+        <tr>
+            <td> 2nd Rear Camera </td>
+            <td ng-repeat="x in devices" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
+                <strong>{{ x.Camera2 }}
+                    <label ng-if="x.hasOwnProperty('Camera2')"> MP </label>
+                    <label ng-if="!(x.hasOwnProperty('Camera2'))"> None </label>
+                </strong>
             </td>
         <tr/>
         <tr class="active">
