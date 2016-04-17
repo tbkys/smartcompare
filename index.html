@@ -165,7 +165,7 @@
         <tbody class="text-center">
         <tr>
             <th class="headers" ng-if="CompareModels()"> <br> Specs </th>
-            <td class="names"  ng-repeat="x in devices"  ng-if="x.chosen[0] || x.chosen[1]">
+            <td class="names"  ng-repeat="x in DevicesToShow"  ng-if="x.chosen[0] || x.chosen[1]">
                 <span><img class="ImageDisplay" ng-src="{{x.image}}" ></span>
                 <span>{{x.Name}}</span>
             </td>
@@ -173,21 +173,21 @@
         </tr>
         <tr class="active">
             <td > Network </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,0)" ng-if="x.chosen[0] || x.chosen[1]" >
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,0)" ng-if="x.chosen[0] || x.chosen[1]" >
                 <strong>{{x.Network}}</strong>
             </td>
 
         </tr>
         <tr>
             <td > Operating System </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,0)" ng-if="x.chosen[0] || x.chosen[1]" >
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,0)" ng-if="x.chosen[0] || x.chosen[1]" >
                 <strong>{{x.OS}}</strong>
             </td>
 
         </tr>
         <tr class="active">
             <td > Release Date </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,1)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,1)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>
                     <label ng-if="NotReleasedYet(x)"> Exp.Release: </label>
                     {{x.Month}} / {{x.Year}}
@@ -196,25 +196,25 @@
         </tr>
         <tr >
             <td> Weight </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,2)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,2)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Weight }}g</strong>
             </td>
         <tr/>
         <tr class="active">
             <td> Screen Size </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,3)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,3)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Screen }}"  ({{x.Resolution}}x{{x.Resolution1}})</strong>
             </td>
         <tr/>
         <tr>
             <td> Rear Camera </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Camera }} MP </strong>
             </td>
         <tr/>
         <tr>
             <td> 2nd Rear Camera </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,4)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Camera2 }}
                     <label ng-if="x.hasOwnProperty('Camera2')"> MP </label>
                     <label ng-if="!(x.hasOwnProperty('Camera2'))"> None </label>
@@ -223,44 +223,44 @@
         <tr/>
         <tr class="active">
             <td> Front Camera </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,7)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,7)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.FrontCamera }} MP</strong>
             </td>
         <tr/>
         <tr>
             <td> RAM Memory </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,5)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,5)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.RAM }} GB RAM</strong>
             </td>
         <tr/>
         <tr class="active">
             <td> ROM Memory </td>
-            <td ng-repeat="x in devices"  ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow"  ng-if="x.chosen[0] || x.chosen[1]">
                 <strong> {{ConcatValues(x.ROM)}} GB</strong>
             </td>
         <tr/>
         <tr >
             <td> Battery </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,6)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,6)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ x.Battery }} mAh</strong>
             </td>
         <tr/>
         <tr class="active">
             <td> Price </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,8)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,8)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong> {{ConcatValues(x.price)}} $</strong>
             </td>
         <tr/>
         <tr>
             <td> Value For Money </td>
-            <td ng-repeat="x in devices" ng-style="set_color(x,9)" ng-if="x.chosen[0] || x.chosen[1]">
+            <td ng-repeat="x in DevicesToShow" ng-style="set_color(x,9)" ng-if="x.chosen[0] || x.chosen[1]">
                 <strong>{{ ValueForMoney(x) }} </strong>
             </td>
         <tr/>
         <tr >
             <td class="winner " colspan="3">
 
-            <span class="w3-xlarge" ng-repeat="x in devices"  ng-if="(x.chosen[0] || x.chosen[1]) && x.winner" >
+            <span class="w3-xlarge" ng-repeat="x in DevicesToShow"  ng-if="(x.chosen[0] || x.chosen[1]) && x.winner" >
                 <img  class="recommendation_logo" ng-src="images/scr.png" >
                 <strong>{{ x.Name }}</strong>
                 <img class="winner_img" ng-src="{{x.image}}" alt="winner">
