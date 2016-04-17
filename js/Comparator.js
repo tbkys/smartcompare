@@ -1282,7 +1282,7 @@ SpCompareApp.controller('SpCompareController', function ($scope,$window) {
 
     $scope.NotReleasedYet = function(p1){
         var d = new Date();
-        var month = d.getMonth();
+        var month = d.getMonth()+1;
         var year = d.getFullYear();
         if (p1.Year > year){
             return true;
